@@ -1,12 +1,15 @@
 @import './vars';
 
+// Footer
 .footer {
     background-color: $color-dark;
+    padding: 120px 0 40px 0;
 }
 
 .footer__inner__rectangle-title {
     display: flex;
     align-items: center;
+    margin: 0 0 100px 0;
 }
 
 .footer__inner__rectangle {
@@ -102,4 +105,71 @@
     text-decoration: none;
     text-transform: uppercase;
     color: $color-white;
+}
+
+// Footer Navigation
+.footer__nav {
+    border-top: 1px solid $color-white;
+    border-bottom: 1px solid $color-white;
+
+    width: 100%;
+
+    margin: 100px 0 80px 0;
+}
+
+.footer__nav__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 37px 0;
+}
+
+.footer__nav__items {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.footer__nav__item + .footer__nav__item {
+    margin-left: 55px;
+}
+
+.footer__nav__item__link {
+    font-family: $ff-archivo;
+    font-weight: $fw-400;
+    font-style: $fs-normal;
+    font-size: 25px;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color-white;
+}
+
+.footer__social {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.footer__social__item + .footer__social__item {
+    margin-left: 30px;
+}
+
+.footer__social__link {
+    text-decoration: none;
+}
+
+// Copyright
+.footer__copyright {
+    text-align: center;
+}
+
+.footer__copyright__text {
+    font-family: $ff-archivo;
+    font-weight: $fw-400;
+    font-style: $fs-normal;
+    font-size: 16px;
+
+    color: $color-light-dark;
 }
