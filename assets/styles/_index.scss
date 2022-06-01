@@ -11,64 +11,7 @@
   font-style: $fs-normal;
 }
 
-.section-title {
-  font-weight: $fw-500;
-  font-size: 45px;
-  line-height: 140%;
-  text-transform: uppercase;
-  color: $color-dark;
-}
 
-.section-title:before {
-  content: url('../images/title-icon.svg');
-  position: absolute;
-  left: 50px;
-  top: 50px;
-}
-
-
-
-//Header
-
-.header-inner {
-  display:flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 0;
-}
-
-.header-logo {
-  height: 66px;
-
-  &__img {
-    height: 100%;
-  }
-}
-
-
-.nav {
-  &__list {
-    display: flex;
-    align-items: center;
-    padding-left: 0;
-    list-style: none;
-  }
-
-  &__item + &__item {
-    margin-left: 61px;
-  }
-
-  &__link {
-    font-family: $ff-archivo;
-    font-style: $fs-normal;
-    font-weight: $fw-500;
-    font-size: 16px;
-    font-stretch: 120%;
-    line-height: 15px;
-    color: $color-dark;
-    text-decoration: none;
-  }
-}
 
 
 //Topscreen

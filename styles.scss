@@ -1,6 +1,8 @@
 // Imports
 @import './assets/styles/vars';
 @import './assets/styles/index';
+@import './assets/styles/header';
+@import './assets/styles/footer';
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&family=Cormorant:wght@500&display=swap');
 
@@ -18,7 +20,7 @@ body {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1310px;
   margin: 0 auto;
-  padding: 0 80px;
+  padding: 0 15px;
 }
