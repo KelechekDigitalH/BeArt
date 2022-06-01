@@ -13,6 +13,7 @@ $fs-normal: normal;
 // Colors
 $color-light-grey: #EBEBEB;
 $color-grey: #BCBCBC;
+$color-light-dark-9a: #9A9A9A;
 $color-light-dark: #747474;
 $color-dark: #383838;
 $color-dark-2d: #2D2D2D;
@@ -63,6 +64,14 @@ $color-white: #FFFFFF;
 
   line-height: 140%;
   color: $color-light-dark;
+}
+
+@mixin rectangle {
+  width: 14px;
+  height: 14px;
+  background-color: $color-white;
+  transform: rotate(45deg);
+  margin-right: 20px;
 }
 
 @mixin benefits-span {

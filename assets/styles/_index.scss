@@ -186,4 +186,120 @@
   position: absolute;
   transform: translate(-530%, 245%);
 }
+
+// Roadmap
+.roadmap {
+  background-color: $color-dark-2d;
+  padding: 120px 0 138px 0;
+}
+
+.roadmap__inner__rectangle-title {
+  display: flex;
+  align-items: center;
+  margin: 0 0 100px 0;
+}
+
+.roadmap__inner__rectangle {
+  @include rectangle;
+}
+
+.roadmap__inner__title {
+  @include title;
+  color: $color-white;
+}
+
+.roadmap__inner__data-texts {
+  display: flex;
+  align-items: center;
+}
+
+.roadmap__inner__data-text {
+  @include inner-title;
+  color: $color-yellow;
+}
+
+.roadmap__inner__data-text + .roadmap__inner__data-text {
+  margin: 0 0 0 230px;
+}
+
+.roadmap__inner__data-block {
+  max-width: 960px;
+  margin: 0 0 0 auto;
+}
+
+.roadmap__inner__data-roadmap-circles-line {
+  margin: 35px 0;
+}
+
+.roadmap__inner__data-roadmap-circle-blocks {
+  display: flex;
+  align-items: center;
+}
+
+.roadmap__inner__data-roadmap-circle {
+  width: 87px;
+  height: 87px;
+  
+  border-radius: 100%;
+  border: 1px solid $color-white;
+  background-color: $color-dark-2d;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 1;
+}
+
+.roadmap__inner__data-roadmap-circle + .roadmap__inner__data-roadmap-circle {
+  margin-left: 248px;
+}
+
+.roadmap__inner__data-roadmap-inner-circle {
+  width: 45px;
+  height: 45px;
+  
+  background-color: $color-light-dark-9a;
+  border-radius: 100%;
+}
+
+.roadmap__inner__data-roadmap-line {
+  width: 100%;
+  height: 1px;
+  background-color: $color-white;
+  transform: translate(0, -685px);
+}
+
+.roadmap__inner__names-moon {
+  display: flex;
+  align-items: start;
+}
+
+.roadmap__inner__name-blocks {
+  max-width: 240px;
+}
+
+.roadmap__inner__name-blocks + .roadmap__inner__name-blocks {
+  margin: 0 0 0 85px;
+}
+
+.roadmap__inner__moon + .roadmap__inner__moon {
+  margin-top: 50px;
+}
+
+.roadmap__inner__moon__title {
+  @include inner-description;
+  color: $color-white;
+}
+
+.roadmap__inner__moon__description {
+  font-family: $ff-archivo;
+  font-style: $fs-normal;
+  font-weight: $fw-400;
+  font-size: 16px;
+
+  color: $color-light-dark;
+  margin: 5px 0 0 0;
+  line-height: 24px;
+}
 // Эрбол бүткөн жер
