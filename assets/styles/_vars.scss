@@ -21,23 +21,60 @@ $color-white: #FFFFFF;
 
 
 
+// Mixins
 @mixin title {
   font-family: $ff-cormorant;
   font-style: $fs-normal;
   font-weight: $fw-500;
   font-size: 45px;
+
   line-height: 140%;
   text-transform: uppercase;
   color: $color-dark;
 }
 
-@mixin subtitle {
-  font-family: $ff-cormorant;
+@mixin inner-title {
+  font-family: $ff-archivo;
   font-style: $fs-normal;
   font-weight: $fw-500;
   font-size: 45px;
+
   line-height: 140%;
   text-transform: uppercase;
   color: $color-dark-2d;
   font-stretch: 120;
+}
+
+@mixin inner-description {
+  font-family: $ff-archivo;
+  font-style: $fs-normal;
+  font-weight: $fw-400;
+  font-size: 24px;
+
+  line-height: 140%;
+  text-transform: uppercase;
+  color: $color-dark;
+  font-stretch: 120;
+}
+
+@mixin benefits {
+  font-family: $ff-archivo;
+  font-style: $fs-normal;
+  font-weight: $fw-400;
+  font-size: 18px;
+
+  line-height: 140%;
+  color: $color-light-dark;
+}
+
+@mixin rectangle {
+  width: 14px;
+  height: 14px;
+  background-color: $color-white;
+  transform: rotate(45deg);
+  margin-right: 20px;
+}
+
+@mixin benefits-span {
+  color: $color-dark;
 }

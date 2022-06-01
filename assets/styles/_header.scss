@@ -19,6 +19,7 @@
 
 
 .nav {
+
   &__list {
     display: flex;
     align-items: center;
@@ -27,7 +28,7 @@
   }
 
   &__item + &__item {
-    margin-left: 61px;
+    margin-left: 50px;
   }
 
   &__link {
@@ -35,7 +36,7 @@
     font-style: $fs-normal;
     font-weight: $fw-500;
     font-size: 16px;
-    font-stretch: 120%;
+    // font-stretch: 120%;
     line-height: 15px;
     color: $color-dark;
     text-decoration: none;

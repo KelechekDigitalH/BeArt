@@ -11,8 +11,17 @@
   font-style: $fs-normal;
 }
 
+.expended-nav {
+  transform: scale(1.25, 0.9);
+}
 
-
+.rectangle-icon {
+  width: 14px;
+  height: 14px;
+  background-color: $color-dark-2d;
+  transform: rotate(45deg);
+  margin: 0 20px 0 5px;
+}
 
 //Topscreen
 .topscreen {
@@ -36,7 +45,7 @@
     text-transform: uppercase;
     color: $color-dark;
     font-stretch: extra-condensed;
-    padding: 110px 0 136px 0;
+    padding: 110px 0 132px 0;         
   }
   
   .dedicated {
@@ -46,14 +55,40 @@
     letter-spacing: 0.07em;
     text-transform: none;
     color: $color-yellow;
+    transform: scale(unset);
   }
+
+  .video-btn {
+    width: 160px;
+    position: absolute;
+    top: 66.8%;
+    left: 71%;
+
+    &__img {
+      width: 100%;
+    }
+  }
+
+  // .expended-text {
+  //   transform: scale(1.25, 0.9);
+  // }
 }
 
 
 //Our commitment
 .commitment{
+   &__wrapper {
+     max-width: 1120px;
+     text-align: left;
+     padding: 121px 0 0 0;
+   }
+
+  &__title {
+    @include title;
+  }
 
   &__subtitle {
+    max-width: 200px;
     font-weight: $fw-700;
     font-size: 25px;
     line-height: 150%;
@@ -63,31 +98,49 @@
   }
 
   .beart-description {
-    font-weight: $fw-400;
-    font-size: 18px;
-    line-height: 140%;
-    color: $color-light-dark;
-    font-stretch: 120;
+    @include benefits;
+    // margin: 0 0 0 65px;
   }
 
   &__description {
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 140%;
-    text-transform: uppercase;
-    color: #747474;
-    font-stretch: 120;
+    @include inner-description;
+    color: $color-light-dark;
+    margin: 0 0 0 120px;
   }
 
   .beart-description,
-  &__description{
+   &__description {
     max-width: 600px;
   }
 }
 
-.first-block,
-.second-block,
-.third-block   {
+.section-title-block {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
+.first-block {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 29px 0 0 0;
+}
+
+.second-block {
+  display: flex;
+  padding: 120px 0 80px 0;
+  justify-content: flex-end;
+}
+
+.third-block   {
+  display: flex;
+  justify-content: flex-end;
+  padding: 55px 0;
+  margin: 0 0 124px 0;
+}
+
+.mission-subtitle {
+  max-width: 120px;
+  margin: 0 80px 0 0;
+}
