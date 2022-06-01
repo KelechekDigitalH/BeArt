@@ -31,7 +31,8 @@
     align-items: start;
     justify-content: space-between;
 
-    padding: 0 40px 0 200px;
+    max-width: 1040px;
+    margin: 0 40px 0 auto;
 }
 
 .footer__inner__email-block {
