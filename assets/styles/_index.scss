@@ -1,5 +1,6 @@
 @import './vars';
 
+// Айнагүл
 //Common style properties
 .archivo {
   font-family: $ff-archivo;
@@ -10,8 +11,6 @@
   font-family: $ff-cormorant;
   font-style: $fs-normal;
 }
-
-
 
 
 //Topscreen
@@ -90,4 +89,101 @@
 .third-block   {
   display: flex;
 }
+// Айнагүл бүткөн жер 
 
+
+
+// Эрбол
+.benefits-span {
+  @include benefits-span;
+}
+
+// Art Lovers
+.artlovers-customers__inner__customers {
+  margin: 100px 0 0 0;
+}
+
+.artlovers-customers__inner__artlovers__title {
+  @include inner-title;
+  max-width: 530px;
+}
+
+.artlovers-customers__inner__artlovers__texts-image {
+  max-width: 960px;
+  margin: 0 0 0 auto;
+}
+
+.artlovers-customers__inner__artlovers__texts {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+
+  margin: 70px 0;
+}
+
+.artlovers-customers__inner__artlovers__description {
+  @include inner-description;
+  max-width: 400px;
+}
+
+.artlovers-customers__inner__artlovers__benefits {
+  @include benefits;
+  max-width: 350px;
+}
+
+.artlovers-customers__inner__artlovers__image {
+  height: 800px;
+}
+
+.artlovers-customers__inner__artlovers__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+// Customers
+.artlovers-customers__inner__customers__title {
+  @include inner-title;
+  max-width: 530px;
+}
+
+.artlovers-customers__inner__customers__texts-image {
+  max-width: 960px;
+  margin: 0 0 0 auto;
+}
+
+.artlovers-customers__inner__customers__texts {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+
+  margin: 70px 0;
+}
+
+.artlovers-customers__inner__customers__description {
+  @include inner-description;
+  max-width: 400px;
+}
+
+.artlovers-customers__inner__customers__benefits {
+  @include benefits;
+  max-width: 350px;
+}
+
+.artlovers-customers__inner__customers__image {
+  height: 580px;
+}
+
+.artlovers-customers__inner__customers__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  position: relative;
+}
+
+.artlovers-customers__inner__customers__play-icon {
+  position: absolute;
+  transform: translate(-530%, 245%);
+}
+// Эрбол бүткөн жер
