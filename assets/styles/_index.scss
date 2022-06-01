@@ -1,6 +1,6 @@
 @import './vars';
 
-// Айнагүл
+// Ainagul
 //Common style properties
 .archivo {
   font-family: $ff-archivo;
@@ -89,11 +89,11 @@
 .third-block   {
   display: flex;
 }
-// Айнагүл бүткөн жер 
+// Ainagul end
 
 
 
-// Эрбол
+// Erbol
 .benefits-span {
   @include benefits-span;
 }
@@ -302,4 +302,121 @@
   margin: 5px 0 0 0;
   line-height: 24px;
 }
-// Эрбол бүткөн жер
+
+// Our Team
+.our-team {
+  padding: 77px 0 149px 0;
+}
+
+.our-team__inner__title--animate-img {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 0 0 56px 0;
+}
+
+.our-team__inner__img {
+  width: 150px;
+  height: 150px;
+
+  animation: imganimate 7s linear infinite;
+}
+
+@keyframes imganimate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.our-team__inner__rectangle-title {
+  display: flex;
+  align-items: center;
+}
+
+.our-team__inner__inner__rectangle {
+  @include rectangle;
+  background-color: $color-dark-2d;
+}
+
+.our-team__inner__inner__title {
+  @include title;
+  color: $color-dark-2d;
+}
+
+.our-team__inner__description-block {
+  padding: 0 360px 0 320px;
+  margin: 0 0 100px 0;
+}
+
+.our-team__inner__description-text {
+  @include inner-description;
+  max-width: 470px;
+}
+
+// Our Partners
+.our-partners {
+  background-color: $color-white;
+  padding: 120px 0 122px 0;
+}
+
+.our-partners__inner__block-partners {
+  display: flex;
+  align-items: start;
+
+  max-width: 1080px;
+  margin: 0 0 0 auto;
+}
+
+.our-partners__inner__rectangle-title {
+  display: flex;
+  align-items: center;
+  margin: 0 0 144px 0;
+}
+
+.our-partners__inner__inner__rectangle {
+  @include rectangle;
+  background-color: $color-dark-2d;
+}
+
+.our-partners__inner__inner__title {
+  @include title;
+  color: $color-dark-2d;
+}
+
+.our-partners__inner__partner {
+  max-width: 300px;
+}
+
+.our-partners__inner__partner + .our-partners__inner__partner {
+  margin: 0 0 0 90px;
+}
+
+.our-partners__inner__logo-block {
+  width: 260px;
+  height: 260px;
+
+  border-radius: 100%;
+  border: 1px solid #000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.our-partners__inner__logo-zmq {
+  width: 171px;
+}
+
+.our-partners__inner__logo-enefti {
+  width: 163px;
+}
+
+.our-partners__inner__description {
+  @include partners-description;
+  margin: 96px 0 0 0;
+}
+// Erbol end
