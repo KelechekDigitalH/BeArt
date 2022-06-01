@@ -1,1 +1,93 @@
 @import './vars';
+
+//Common style properties
+.archivo {
+  font-family: $ff-archivo;
+  font-style: $fs-normal;
+}
+
+.cormorant {
+  font-family: $ff-cormorant;
+  font-style: $fs-normal;
+}
+
+
+
+
+//Topscreen
+.topscreen {
+  background-color: $color-grey;
+  
+  &__wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    background: url('../assets/images/Banner-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  &__title {
+    width: 100%;
+    text-align: left;
+    font-weight: $fw-500;
+    font-size: 60px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: $color-dark;
+    font-stretch: extra-condensed;
+    padding: 110px 0 136px 0;
+  }
+  
+  .dedicated {
+    font-weight: $fw-700;
+    font-size: 68px;
+    line-height: 140%;
+    letter-spacing: 0.07em;
+    text-transform: none;
+    color: $color-yellow;
+  }
+}
+
+
+//Our commitment
+.commitment{
+
+  &__subtitle {
+    font-weight: $fw-700;
+    font-size: 25px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: $color-dark;
+    font-stretch: 120;
+  }
+
+  .beart-description {
+    font-weight: $fw-400;
+    font-size: 18px;
+    line-height: 140%;
+    color: $color-light-dark;
+    font-stretch: 120;
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #747474;
+    font-stretch: 120;
+  }
+
+  .beart-description,
+  &__description{
+    max-width: 600px;
+  }
+}
+
+.first-block,
+.second-block,
+.third-block   {
+  display: flex;
+}
+

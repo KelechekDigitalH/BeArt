@@ -18,3 +18,26 @@ $color-dark: #383838;
 $color-dark-2d: #2D2D2D;
 $color-yellow: #F3BF6A;
 $color-white: #FFFFFF;
+
+
+
+@mixin title {
+  font-family: $ff-cormorant;
+  font-style: $fs-normal;
+  font-weight: $fw-500;
+  font-size: 45px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: $color-dark;
+}
+
+@mixin subtitle {
+  font-family: $ff-cormorant;
+  font-style: $fs-normal;
+  font-weight: $fw-500;
+  font-size: 45px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: $color-dark-2d;
+  font-stretch: 120;
+}
