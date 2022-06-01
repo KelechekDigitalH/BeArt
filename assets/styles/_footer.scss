@@ -13,11 +13,7 @@
 }
 
 .footer__inner__rectangle {
-    width: 14px;
-    height: 14px;
-    background-color: $color-white;
-    transform: rotate(45deg);
-    margin-right: 20px;
+    @include rectangle;
 }
 
 .footer__inner__title {
