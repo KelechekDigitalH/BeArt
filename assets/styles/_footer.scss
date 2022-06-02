@@ -13,21 +13,13 @@
 }
 
 .footer__inner__rectangle {
-    width: 14px;
-    height: 14px;
-    background-color: $color-white;
-    transform: rotate(45deg);
-    margin-right: 20px;
+    @include rectangle;
 }
 
 .footer__inner__title {
-    font-family: $ff-cormorant;
+    @include title;
     font-weight: $fw-400;
-    font-style: $fs-normal;
-    font-size: 45px;
     color: $color-white;
-
-    text-transform: uppercase;
 }
 
 .footer__inner__email-address {
@@ -35,7 +27,8 @@
     align-items: start;
     justify-content: space-between;
 
-    padding: 0 40px 0 200px;
+    max-width: 1040px;
+    margin: 0 40px 0 auto;
 }
 
 .footer__inner__email-block {
