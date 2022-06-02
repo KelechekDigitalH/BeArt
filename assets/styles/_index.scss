@@ -16,11 +16,9 @@
 }
 
 .rectangle-icon {
-  width: 14px;
-  height: 14px;
+  @include rectangle;
   background-color: $color-dark-2d;
-  transform: rotate(45deg);
-  margin: 0 20px 0 5px;
+  margin-left: 5px;
 }
 
 //Topscreen
@@ -44,7 +42,7 @@
     line-height: 140%;
     text-transform: uppercase;
     color: $color-dark;
-    font-stretch: extra-condensed;
+    font-stretch: 120;
     padding: 110px 0 132px 0;         
   }
   
@@ -61,7 +59,7 @@
   .video-btn {
     width: 160px;
     position: absolute;
-    top: 66.8%;
+    top: 71%;
     left: 71%;
 
     &__img {
@@ -69,9 +67,6 @@
     }
   }
 
-  // .expended-text {
-  //   transform: scale(1.25, 0.9);
-  // }
 }
 
 
@@ -143,4 +138,164 @@
 .mission-subtitle {
   max-width: 120px;
   margin: 0 80px 0 0;
+}
+
+
+// Important issues 
+
+.important-issues {
+  background-color: $color-dark-2d;
+  
+  &__wrapper {
+    padding: 120px 0 155px 0;
+  }
+  &__title {
+    font-weight: $fw-500;
+    font-size: 60px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: $color-white;
+    font-stretch: 120;
+  }
+
+  &__subtitle{
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #FFBD59;
+    font-stretch: 120%;
+  }
+
+  &__description {
+    max-width: 600px;
+    @include inner-description;
+  }
+  
+}
+
+// .issues-block {
+ 
+// }
+
+
+
+.issues {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:flex-end;
+  padding-left: 0;
+  list-style: none;
+  margin: 120px 0 151px 0;
+  position: relative;
+  max-width: 1078px;
+  margin: 120px 0 151px 0;
+
+
+  &__item {
+    border: 1px solid $color-white;
+    border-radius: 50%;
+    position: absolute;
+  }
+
+  &__link {
+    font-family: $ff-archivo;
+    font-style: $fs-normal;
+    font-weight: $fw-500;
+    font-size: 14.0299px;
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-white;
+    font-stretch: 120;
+    text-decoration: none;
+  }
+
+  .first-item {
+    padding: 94.75px 55px  95.25px 56px;
+    left: 25px;
+  }
+
+  .second-item {
+    padding: 94.75px 55px  95.25px 56px;
+    left: 200px;
+  }
+   
+  .third-item {
+    padding: 84.75px 33.23px  85.25px  33.77px;
+    left: 430px
+  }
+
+  .fourth-item {
+    padding: 74.75px 18.66px  55.25px  19.23px;
+    left: 757px
+  }
+
+  .fifth-item {
+    padding: 85px 23.46px 85px  24.54px;
+    left: 975px
+  }
+}
+
+
+.believe-block {
+  display: flex;
+  justify-content: center;
+  gap: 120px
+}
+
+
+//Our community
+
+.community {
+
+  &__wrapper {
+    display: flex;
+    gap: 60px;
+    padding: 67px 0 0 0;
+  }
+
+  &__title-block {
+    display: flex;
+    align-items: center;
+    margin: 37px 0 0 0;
+  }
+
+  &__title {
+    @include title;
+  }
+
+  &__description-block {
+    max-width: 500px;
+    margin: 0 0 132px 320px;
+  }
+
+  &__subtitle {
+    max-width: 600px;
+    @include inner-title;
+    margin: 100px 0 70px 0;
+  }
+
+  &__description {
+    @include inner-description;
+    margin: 70px 0 50px 0;
+  }
+
+  &__benefit{
+    @include benefits;
+  }
+
+  &__benefit span {
+    @include benefits-span;
+  }
+
+  &__img {
+    margin: 67px 0 0 0;
+  }
+
+}
+
+.text-side {
+  max-width: 820px;
 }
