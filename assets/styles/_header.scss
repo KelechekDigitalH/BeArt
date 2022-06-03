@@ -19,6 +19,7 @@
 
 
 .nav {
+
   &__list {
     display: flex;
     align-items: center;
@@ -27,7 +28,11 @@
   }
 
   &__item + &__item {
-    margin-left: 61px;
+    margin-left: 50px;
+  }
+
+  &__item {
+    padding-left: 11px;
   }
 
   &__link {

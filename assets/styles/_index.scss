@@ -19,7 +19,7 @@
 .rectangle-icon {
   @include rectangle;
   background-color: $color-dark-2d;
-  margin-left: 5px;
+  margin: 0 23px 0  3px;
 }
 
 //Topscreen
@@ -38,12 +38,12 @@
   &__title {
     width: 100%;
     text-align: left;
-    @include inner-title;
+    font-weight: $fw-500;
     font-size: 60px;
     line-height: 140%;
     text-transform: uppercase;
     color: $color-dark;
-    font-stretch: 120;
+    font-stretch: 120%;
     padding: 110px 0 132px 0;
   }
 
@@ -89,7 +89,7 @@
     line-height: 150%;
     text-transform: uppercase;
     color: $color-dark;
-    font-stretch: 120;
+    font-stretch: 120%;
   }
 
   .beart-description {
@@ -111,7 +111,7 @@
 
 .commitment__line-commitment {
   position: absolute;
-  transform: translate(174px, -147px);
+  transform: translate(175px, -172px);
 }
 
 .section-title-block {
@@ -129,15 +129,14 @@
 
 .second-block {
   display: flex;
-  padding: 120px 0 80px 0;
+  margin: 100px 0;
   justify-content: flex-end;
 }
 
 .third-block {
   display: flex;
   justify-content: flex-end;
-  padding: 55px 0;
-  margin: 0 0 124px 0;
+  margin: 0 0 152px 0;
 }
 
 .mission-subtitle {
@@ -145,12 +144,19 @@
   margin: 0 80px 0 0;
 }
 
+.diamond {
+  position: absolute;
+  // top: 128.5%;
+  left: 75.2%;
+  transform: translate(0, -464px);
+}
+
 // Important issues 
 .important-issues {
   background-color: $color-dark-2d;
 
   &__wrapper {
-    padding: 120px 0 155px 0;
+    padding: 120px 0 158px 0;
   }
 
   &__title {
@@ -159,8 +165,8 @@
     line-height: 140%;
     text-transform: uppercase;
     color: $color-white;
-    font-stretch: 120;
-    max-width: 1000px;
+    font-stretch: 120%;
+    max-width: 1249px;
   }
 
   &__subtitle {
@@ -199,7 +205,6 @@
   &__item {
     border: 1px solid $color-white;
     border-radius: 100%;
-
     width: 230px;
     height: 230px;
     display: flex;
@@ -208,21 +213,16 @@
   }
 
   &__item+&__item {
-    margin-left: -15px;
+    margin-left: -18px;
   }
 
-  &__link {
-    font-family: $ff-archivo;
-    font-style: $fs-normal;
-    font-weight: $fw-500;
+  &__item-text {
+    @include inner-title;
     font-size: 14.0299px;
-    line-height: 140%;
     text-align: center;
-    text-transform: uppercase;
     color: $color-white;
-    font-stretch: 120;
-    text-decoration: none;
   }
+
 
   .first-item {
     max-width: 119px;
@@ -233,22 +233,25 @@
   }
 
   .third-item {
-    max-width: 130px;
+    max-width: 162px;
   }
 
   .fourth-item {
-    max-width: 150px;
+    max-width: 194px;
   }
 
   .fifth-item {
     max-width: 182px;
+    font-stretch: 0%;
   }
 }
 
 .believe-block {
+  // max-width: 920px;
+  margin: 0  auto;
   display: flex;
-  justify-content: center;
-  gap: 120px
+  justify-content: space-between;
+  padding: 0 164px 0 200px;
 }
 
 //Our community
@@ -257,7 +260,7 @@
   &__wrapper {
     display: flex;
     gap: 60px;
-    padding: 67px 0 0 0;
+    padding: 83px 0 0 0;
   }
 
   &__title-block {
@@ -272,13 +275,12 @@
 
   &__description-block {
     max-width: 500px;
-    margin: 0 0 132px 320px;
+    margin: 0 0 0px 320px;
   }
 
   &__subtitle {
     max-width: 600px;
     @include inner-title;
-    margin: 100px 0 70px 0;
   }
 
   &__description {
@@ -294,10 +296,6 @@
     @include benefits-span;
   }
 
-  &__img {
-    margin: 67px 0 0 0;
-  }
-
 }
 
 .community__line-community {
@@ -307,6 +305,22 @@
 
 .text-side {
   max-width: 820px;
+}
+
+.community__inner-artists {
+  padding: 100px 0 0 0;
+}
+
+.community__inner-gallery {
+  padding: 80px 0 0 0;
+}
+
+.image-artists {
+  margin: 67px 0 0 0;
+}
+
+.image-gallery {
+  margin: 13px 0 0 0;
 }
 
 // Ainagul end
