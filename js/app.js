@@ -37,3 +37,11 @@ const ourPartners = new Vivus(
     duration: 150,
   },
 );
+
+const footer = new Vivus(
+  'line-footer',
+  {
+    type: 'sync',
+    duration: 150,
+  },
+);
