@@ -1,5 +1,6 @@
 @import './vars';
 
+// Ainagul
 //Common style properties
 .archivo {
   font-family: $ff-archivo;
@@ -24,7 +25,7 @@
 //Topscreen
 .topscreen {
   background-color: $color-grey;
-  
+
   &__wrapper {
     max-width: 1440px;
     margin: 0 auto;
@@ -37,15 +38,15 @@
   &__title {
     width: 100%;
     text-align: left;
-    font-weight: $fw-500;
+    @include inner-title;
     font-size: 60px;
     line-height: 140%;
     text-transform: uppercase;
     color: $color-dark;
     font-stretch: 120;
-    padding: 110px 0 132px 0;         
+    padding: 110px 0 132px 0;
   }
-  
+
   .dedicated {
     font-weight: $fw-700;
     font-size: 68px;
@@ -59,7 +60,7 @@
   .video-btn {
     width: 160px;
     position: absolute;
-    top: 71%;
+    transform: translate(0, -80px);
     left: 71%;
 
     &__img {
@@ -69,14 +70,13 @@
 
 }
 
-
 //Our commitment
-.commitment{
-   &__wrapper {
-     max-width: 1120px;
-     text-align: left;
-     padding: 121px 0 0 0;
-   }
+.commitment {
+  &__wrapper {
+    max-width: 1120px;
+    text-align: left;
+    padding: 121px 0 0 0;
+  }
 
   &__title {
     @include title;
@@ -104,9 +104,14 @@
   }
 
   .beart-description,
-   &__description {
+  &__description {
     max-width: 600px;
   }
+}
+
+.commitment__line-commitment {
+  position: absolute;
+  transform: translate(174px, -147px);
 }
 
 .section-title-block {
@@ -128,7 +133,7 @@
   justify-content: flex-end;
 }
 
-.third-block   {
+.third-block {
   display: flex;
   justify-content: flex-end;
   padding: 55px 0;
@@ -140,15 +145,14 @@
   margin: 0 80px 0 0;
 }
 
-
 // Important issues 
-
 .important-issues {
   background-color: $color-dark-2d;
-  
+
   &__wrapper {
     padding: 120px 0 155px 0;
   }
+
   &__title {
     font-weight: $fw-500;
     font-size: 60px;
@@ -156,9 +160,10 @@
     text-transform: uppercase;
     color: $color-white;
     font-stretch: 120;
+    max-width: 1000px;
   }
 
-  &__subtitle{
+  &__subtitle {
     font-weight: 700;
     font-size: 25px;
     line-height: 150%;
@@ -170,22 +175,21 @@
   &__description {
     max-width: 600px;
     @include inner-description;
+    color: $color-white;
   }
-  
+
 }
 
 .issues-block {
   max-width: 1078px;
-  margin: 120px 0 151px 0;
+  margin: 120px 0 0 auto;
 }
-
-
 
 .issues {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content:flex-end;
+  justify-content: flex-end;
   padding-left: 0;
   list-style: none;
   margin: 120px 0 151px 0;
@@ -194,8 +198,17 @@
 
   &__item {
     border: 1px solid $color-white;
-    border-radius: 50%;
-    position: absolute;
+    border-radius: 100%;
+
+    width: 230px;
+    height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__item+&__item {
+    margin-left: -15px;
   }
 
   &__link {
@@ -212,31 +225,25 @@
   }
 
   .first-item {
-    padding: 94.75px 55px  95.25px 56px;
-    left: 25px;
+    max-width: 119px;
   }
 
   .second-item {
-    padding: 94.75px 55px  95.25px 56px;
-    left: 200px;
+    max-width: 115px;
   }
-   
+
   .third-item {
-    padding: 84.75px 33.23px  85.25px  33.77px;
-    left: 430px
+    max-width: 130px;
   }
 
   .fourth-item {
-    padding: 74.75px 18.66px  55.25px  19.23px;
-    left: 757px
+    max-width: 150px;
   }
 
   .fifth-item {
-    padding: 85px 23.46px 85px  24.54px;
-    left: 975px
+    max-width: 182px;
   }
 }
-
 
 .believe-block {
   display: flex;
@@ -244,9 +251,7 @@
   gap: 120px
 }
 
-
 //Our community
-
 .community {
 
   &__wrapper {
@@ -281,7 +286,7 @@
     margin: 70px 0 50px 0;
   }
 
-  &__benefit{
+  &__benefit {
     @include benefits;
   }
 
@@ -295,6 +300,363 @@
 
 }
 
+.community__line-community {
+  position: absolute;
+  transform: translate(128px, -88px);
+}
+
 .text-side {
   max-width: 820px;
 }
+
+// Ainagul end
+
+
+// Erbol
+.benefits-span {
+  @include benefits-span;
+}
+
+// Art Lovers
+.artlovers-customers {
+  padding: 100px 0 150px 0;
+}
+
+.artlovers-customers__inner__customers {
+  margin: 100px 0 0 0;
+}
+
+.artlovers-customers__inner__artlovers__title {
+  @include inner-title;
+  max-width: 530px;
+}
+
+.artlovers-customers__inner__artlovers__texts-image {
+  max-width: 960px;
+  margin: 0 0 0 auto;
+}
+
+.artlovers-customers__inner__artlovers__texts {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+
+  margin: 70px 0;
+}
+
+.artlovers-customers__inner__artlovers__description {
+  @include inner-description;
+  max-width: 500px;
+}
+
+.artlovers-customers__inner__artlovers__benefits {
+  @include benefits;
+  max-width: 400px;
+}
+
+.artlovers-customers__inner__artlovers__image {
+  height: 800px;
+}
+
+.artlovers-customers__inner__artlovers__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+// Customers
+.artlovers-customers__inner__customers__title {
+  @include inner-title;
+  max-width: 530px;
+}
+
+.artlovers-customers__inner__customers__texts-image {
+  max-width: 960px;
+  margin: 0 0 0 auto;
+}
+
+.artlovers-customers__inner__customers__texts {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+
+  margin: 70px 0;
+}
+
+.artlovers-customers__inner__customers__description {
+  @include inner-description;
+  max-width: 500px;
+}
+
+.artlovers-customers__inner__customers__benefits {
+  @include benefits;
+  max-width: 400px;
+}
+
+.artlovers-customers__inner__customers__image {
+  height: 580px;
+}
+
+.artlovers-customers__inner__customers__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  position: relative;
+}
+
+.artlovers-customers__inner__customers__play-icon {
+  position: absolute;
+  transform: translate(-530%, 245%);
+}
+
+// Roadmap
+.roadmap {
+  background-color: $color-dark-2d;
+  padding: 120px 0 138px 0;
+}
+
+.roadmap__inner__rectangle-title {
+  display: flex;
+  align-items: center;
+  margin: 0 0 100px 0;
+}
+
+.roadmap__inner__rectangle {
+  @include rectangle;
+}
+
+.roadmap__inner__title {
+  @include title;
+  color: $color-white;
+}
+
+.roadmap__inner__line-roadmap {
+  position: absolute;
+  transform: translate(18px, -180px);
+}
+
+.roadmap__inner__data-texts {
+  display: flex;
+  align-items: center;
+}
+
+.roadmap__inner__data-text {
+  @include inner-title;
+  color: $color-yellow;
+}
+
+.roadmap__inner__data-text+.roadmap__inner__data-text {
+  margin: 0 0 0 207px;
+}
+
+.roadmap__inner__data-block {
+  max-width: 960px;
+  margin: 0 0 0 auto;
+}
+
+.roadmap__inner__data-roadmap-circles-line {
+  margin: 35px 0;
+}
+
+.roadmap__inner__data-roadmap-circle-blocks {
+  display: flex;
+  align-items: center;
+}
+
+.roadmap__inner__data-roadmap-circle {
+  width: 87px;
+  height: 87px;
+
+  border-radius: 100%;
+  border: 1px solid $color-white;
+  background-color: $color-dark-2d;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 1;
+}
+
+.roadmap__inner__data-roadmap-circle+.roadmap__inner__data-roadmap-circle {
+  margin-left: 248px;
+}
+
+.roadmap__inner__data-roadmap-inner-circle {
+  width: 45px;
+  height: 45px;
+
+  background-color: $color-light-dark-9a;
+  border-radius: 100%;
+}
+
+.roadmap__inner__data-roadmap-line {
+  width: 100%;
+  height: 1px;
+  background-color: $color-white;
+  transform: translate(0, -685px);
+}
+
+.roadmap__inner__names-moon {
+  display: flex;
+  align-items: start;
+}
+
+.roadmap__inner__name-blocks {
+  max-width: 240px;
+}
+
+.roadmap__inner__name-blocks+.roadmap__inner__name-blocks {
+  margin: 0 0 0 85px;
+}
+
+.roadmap__inner__moon+.roadmap__inner__moon {
+  margin-top: 50px;
+}
+
+.roadmap__inner__moon__title {
+  @include inner-description;
+  color: $color-white;
+}
+
+.roadmap__inner__moon__description {
+  font-family: $ff-archivo;
+  font-style: $fs-normal;
+  font-weight: $fw-400;
+  font-size: 16px;
+
+  color: $color-light-dark;
+  margin: 5px 0 0 0;
+  line-height: 24px;
+}
+
+// Our Team
+.our-team {
+  padding: 77px 0 149px 0;
+}
+
+.our-team__inner__title--animate-img {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 0 0 56px 0;
+}
+
+.our-team__inner__img {
+  width: 150px;
+  height: 150px;
+
+  animation: imganimate 7s linear infinite;
+}
+
+@keyframes imganimate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.our-team__inner__rectangle-title {
+  display: flex;
+  align-items: center;
+}
+
+.our-team__inner__inner__rectangle {
+  @include rectangle;
+  background-color: $color-dark-2d;
+}
+
+.our-team__inner__inner__title {
+  @include title;
+  color: $color-dark-2d;
+}
+
+.our-team__inner__line-our-team {
+  position: absolute;
+  transform: translate(130px, -170px);
+}
+
+.our-team__inner__description-block {
+  padding: 0 360px 0 320px;
+  margin: 0 0 100px 0;
+}
+
+.our-team__inner__description-text {
+  @include inner-description;
+  max-width: 600px;
+}
+
+// Our Partners
+.our-partners {
+  background-color: $color-white;
+  padding: 120px 0 122px 0;
+}
+
+.our-partners__inner__block-partners {
+  display: flex;
+  align-items: start;
+
+  max-width: 1080px;
+  margin: 0 0 0 auto;
+}
+
+.our-partners__inner__rectangle-title {
+  display: flex;
+  align-items: center;
+  margin: 0 0 144px 0;
+}
+
+.our-partners__inner__line-our-partners {
+  position: absolute;
+  transform: translate(130px, -230px);
+}
+
+.our-partners__inner__inner__rectangle {
+  @include rectangle;
+  background-color: $color-dark-2d;
+}
+
+.our-partners__inner__inner__title {
+  @include title;
+  color: $color-dark-2d;
+}
+
+.our-partners__inner__partner {
+  max-width: 300px;
+}
+
+.our-partners__inner__partner+.our-partners__inner__partner {
+  margin: 0 0 0 90px;
+}
+
+.our-partners__inner__logo-block {
+  width: 260px;
+  height: 260px;
+
+  border-radius: 100%;
+  border: 1px solid #000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.our-partners__inner__logo-zmq {
+  width: 171px;
+}
+
+.our-partners__inner__logo-enefti {
+  width: 163px;
+}
+
+.our-partners__inner__description {
+  @include partners-description;
+  margin: 96px 0 0 0;
+}
+
+// Erbol end
