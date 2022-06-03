@@ -160,7 +160,7 @@
     text-transform: uppercase;
     color: $color-white;
     font-stretch: 120;
-    max-width: 920px;
+    max-width: 1000px;
   }
 
   &__subtitle {
@@ -346,12 +346,12 @@
 
 .artlovers-customers__inner__artlovers__description {
   @include inner-description;
-  max-width: 400px;
+  max-width: 500px;
 }
 
 .artlovers-customers__inner__artlovers__benefits {
   @include benefits;
-  max-width: 350px;
+  max-width: 400px;
 }
 
 .artlovers-customers__inner__artlovers__image {
@@ -385,12 +385,12 @@
 
 .artlovers-customers__inner__customers__description {
   @include inner-description;
-  max-width: 400px;
+  max-width: 500px;
 }
 
 .artlovers-customers__inner__customers__benefits {
   @include benefits;
-  max-width: 350px;
+  max-width: 400px;
 }
 
 .artlovers-customers__inner__customers__image {
@@ -447,7 +447,7 @@
 }
 
 .roadmap__inner__data-text+.roadmap__inner__data-text {
-  margin: 0 0 0 230px;
+  margin: 0 0 0 207px;
 }
 
 .roadmap__inner__data-block {
@@ -588,7 +588,7 @@
 
 .our-team__inner__description-text {
   @include inner-description;
-  max-width: 470px;
+  max-width: 600px;
 }
 
 // Our Partners

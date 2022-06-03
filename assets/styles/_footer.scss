@@ -80,24 +80,20 @@
 }
 
 .footer__inner__address-block__text {
-    font-family: $ff-archivo;
-    font-weight: $fw-400;
-    font-style: $fs-normal;
-    font-size: 24px;
-
+    @include inner-description;
     color: $color-white;
-    text-transform: uppercase;
 }
 
 .footer__inner__address-block__tel {
-    font-family: $ff-archivo;
-    font-weight: $fw-400;
-    font-style: $fs-normal;
-    font-size: 24px;
+    @include inner-description;
 
     text-decoration: none;
-    text-transform: uppercase;
     color: $color-white;
+}
+
+.footer__inner__line-footer {
+    position: absolute;
+    transform: translate(440px, -180px);
 }
 
 // Footer Navigation

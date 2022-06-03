@@ -41,7 +41,7 @@ $color-white: #FFFFFF;
   line-height: 140%;
   text-transform: uppercase;
   color: $color-dark-2d;
-  font-stretch: 120;
+  font-stretch: 120%;
 }
 
 @mixin inner-description {
@@ -53,7 +53,7 @@ $color-white: #FFFFFF;
   line-height: 140%;
   text-transform: uppercase;
   color: $color-dark;
-  font-stretch: 120;
+  font-stretch: 120%;
 }
 
 @mixin benefits {
@@ -64,6 +64,7 @@ $color-white: #FFFFFF;
 
   line-height: 140%;
   color: $color-light-dark;
+  font-stretch: 120%;
 }
 
 @mixin rectangle {
