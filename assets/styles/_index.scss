@@ -70,6 +70,27 @@
 
 }
 
+
+@media (max-width: 768px) {
+  .topscreen {
+    &__title {
+      font-size: 50px;
+      padding: 70px 0 110px 0;  
+    }
+    
+    .dedicated {
+      font-size: 50px;
+    }
+
+    .video-btn {
+      width: 100px;
+      transform: translate(0, -50px);
+      left: 74%;  
+    }
+  }    
+}
+
+
 //Our commitment
 .commitment {
   &__wrapper {

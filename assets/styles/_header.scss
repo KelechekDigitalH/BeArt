@@ -47,3 +47,18 @@
   }
 }
 
+.burger {
+  display: none;
+}
+
+
+@media (max-width: 768px) {
+  
+  .nav__list {
+    display: none;
+  }  
+
+  .burger {
+    display: block;
+  }
+}
