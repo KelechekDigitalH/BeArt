@@ -21,7 +21,6 @@ $color-yellow: #F3BF6A;
 $color-white: #FFFFFF;
 
 
-
 // Mixins
 @mixin title {
   font-family: $ff-cormorant;
@@ -72,7 +71,7 @@ $color-white: #FFFFFF;
   height: 14px;
   background-color: $color-white;
   transform: rotate(45deg);
-  margin-right: 20px;
+  margin: 0 23px 0 3px;
 }
 
 @mixin benefits-span {
