@@ -65,7 +65,7 @@
     width: 160px;
     position: absolute;
     transform: translate(0, -80px);
-    left: 71%;
+    left: 69%;
 
     &__img {
       width: 100%;
@@ -211,11 +211,12 @@
 
 .diamond {
   position: absolute;
-  left: 75.2%;
+  left: 72.5%;
   transform: translate(0, -464px);
 }
 
 @media (max-width: 768px) {
+
   .first-block {
     display: block;
   }
@@ -230,7 +231,7 @@
 
   .commitment {
     &__wrapper {
-      padding: 129px 0 0 0;
+      padding: 129px 0 101px 0;
     }
     
     .beart-description {
@@ -274,15 +275,15 @@
   .diamond {
     width: 155px;
     height: 163px;
-    left: 2%;
-    transform: translate(0, -480px);
+    left: 2.1%;
+    transform: translate(0, -581px);
   }
 }
 
 @media (max-width: 478px) {
   .commitment {
     &__wrapper {
-      padding: 102px 0 0 0;
+      padding: 102px 0 103px 0;
     }
 
     &__title {
@@ -321,7 +322,7 @@
   
   .diamond {
     left: 2%;
-    transform: translate(-86px, -499px);
+    transform: translate(-86px, -602px);
   }
   
 }
@@ -329,7 +330,7 @@
 @media (max-width: 360px) {
   .commitment {
     &__wrapper {
-      padding: 84px 0 0 0;
+      padding: 84px 0 59px 0;
       
       .second-block {
         max-width: 280px;
@@ -352,7 +353,7 @@
   
   .diamond {
     left: 2%;
-    transform: translate(-51px, -565px);
+    transform: translate(-51px, -623px);
   }
 
 }
@@ -362,7 +363,7 @@
   background-color: $color-dark-2d;
 
   &__wrapper {
-    padding: 120px 0 158px 0;
+    padding: 120px 0 155px 0;
   }
 
   &__title {
@@ -387,6 +388,7 @@
   &__description {
     max-width: 600px;
     @include inner-description;
+    line-height: 142%;
     color: $color-white;
   }
 
@@ -394,7 +396,8 @@
 
 .issues-block {
   max-width: 1078px;
-  margin: 120px 0 0 auto;
+  margin: 120px 3px 0 auto;
+  
 }
 
 .issues {
@@ -456,7 +459,202 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  padding: 0 164px 0 200px;
+  padding: 0 160px 0 200px;
+}
+
+
+@media (max-width: 1110px) {
+  .issues {
+    flex-wrap: wrap;
+    margin: 0px 0px 0px 0px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .important-issues {
+    &__wrapper {
+      padding: 70px 0 114px 0;
+    }
+
+    &__title {
+      font-size: 50px;
+    }
+
+    &__description {
+      font-size: 20px;
+      margin: 50px 0 0 0;
+      line-height: 140%;
+    }
+
+  }
+
+  .issues {
+    flex-wrap: wrap;
+    margin: 0 0 70px 0;
+
+    &__item:nth-child(4),
+    &__item:nth-child(5) {
+      margin-top: -38px;   
+    }
+
+    &__item:nth-child(4) {
+      margin-left: 0;
+    }
+  }
+
+  .issues-block {
+    margin: 70px 0 0 auto;
+  }
+
+  .believe-block  {
+    display: block;
+    max-width: 520px;
+    margin: 0 0 0 auto;
+    padding: 0;
+  }
+ 
+}
+
+@media (max-width: 478px) {
+  .important-issues  {
+    &__wrapper {
+      padding: 40px 0 64px 0;
+    }
+
+    &__title {
+      font-size: 30px;
+      max-width: 432px;
+    }
+
+    &__description {
+      font-size: 16px;
+      margin: 40px 0 0 0;
+      line-height: 138%;
+    }
+  }
+
+  .issues-block {
+    max-width: 450px;
+    margin: 50px 0 50px auto;
+  }
+
+  .issues {
+    margin: 0 0 50px 0;
+
+    &__item+&__item {
+      margin-left: -12px;
+    }
+
+    &__item-text {
+      font-size: 16px;
+    }
+    
+
+    &__item:nth-child(3),
+    &__item:nth-child(4) {
+      margin-top: -12px;
+    }
+
+    &__item:nth-child(3) {
+      margin-left: 0px;
+    }
+
+    &__item:nth-child(5) {
+      margin-left: 7px;
+    }
+
+  .first-item {
+    max-width: 136px;
+  }
+  
+  .second-item {
+    max-width: 131px;
+  }
+
+  .fifth-item{
+    font-size: 18px;
+  }   
+  }
+
+  .believe-block {
+    max-width: 331px;
+  }
+
+}
+
+@media (max-width: 360px) {
+  .important-issues {
+    &__wrapper {
+      padding: 40px 0 88px 0;    //по макету bottom 70
+    }
+
+    &__title {
+      font-size: 20px;
+    }
+
+    &__subtitle {
+      font-size: 20px;
+    }
+    &__description {
+      font-size: 16px;
+      line-height: 140%;
+    }
+  }
+
+  .issues {
+    &__item {
+      width: 169px;
+      height: 169px;
+    }
+
+    &__item-text {
+      font-size: 12px;
+    }
+
+    &__item+&__item {
+      margin-left: -8px;
+    }
+
+    &__item:nth-child(3),
+    &__item:nth-child(4) {
+      margin-top: -8px;
+    }
+
+    &__item:nth-child(3) {
+      margin-left: 0px;
+    }
+
+    &__item:nth-child(5) {
+      margin-left: 5px;
+      margin-top: -31px;
+    }
+
+    .first-item {
+      max-width: 100px;
+    }
+  
+    .second-item {
+      max-width: 96px;
+    }
+  
+    .third-item {
+      max-width: 119px;
+    }
+  
+    .fourth-item {
+      max-width: 142px;
+    }
+  
+    .fifth-item {
+      max-width: 133px;
+      font-size: 12px;
+    }
+  }
+
+  .believe-block {
+    max-width: 280px;
+  }
 }
 
 //Our community
