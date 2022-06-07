@@ -231,7 +231,7 @@
 
   .commitment {
     &__wrapper {
-      padding: 129px 0 101px 0;
+      padding: 129px 0 102px 0;
     }
     
     .beart-description {
@@ -260,7 +260,7 @@
 
   .second-block {
     max-width: 520px;
-    margin: 50px 0 50px auto;
+    margin: 49px 0 50px auto;
   }
 
   .third-block {
@@ -317,7 +317,8 @@
 
   .commitment__line-commitment {
     position: absolute;
-    transform: translate(61px, -362px);
+    transform: translate(122px, -408px);
+    width: 169.37px;
   }
   
   .diamond {
@@ -665,7 +666,7 @@
     &-artist {
       display: flex;
       gap: 60px;
-      padding: 150px 0 0 0;
+      padding: 83px 0 0 0;
     }
 
     &-gallery {
@@ -729,17 +730,175 @@
 
 .image-artists {
   margin: 67px 0 0 0;
-  height: 600px;
+  width: 31.25%;
 }
 
 .community__img {
+  background: url(/assets/images/community-img1.png) no-repeat;
+  background-size: cover;
+  background-position: center;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: 600px;
 }
 
 .image-gallery {
+  width: 31.25%;
+}
+
+.gallery-img {
+  background: url(/assets/images/community-img2.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
   height: 600px;
+}
+
+@media (max-width: 768px) {
+  .community {
+    &__wrapper-artist {
+      display: block;
+      padding: 98px 0 0 0;
+    }
+
+    &__inner-artists {
+      padding: 73px 0 0 0;
+    }
+
+    &__subtitle {
+      font-size: 36px;
+    }
+
+    &__description-block {
+      max-width: 520px;
+      margin: 0 0 0 188px;
+    }
+
+    &__wrapper-gallery {
+      display: block;
+      padding: 3px 0 0 0;
+    }
+  }
+
+  .image-artists {
+    margin: 31px 0 0 auto;
+    width: 73.45%;
+  
+  }
+
+  .community__img {
+    background: url(/assets/images/community-horizont1.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 250px; 
+  }
+  
+  .image-gallery {
+    margin: 31px 0 0 auto;
+    width: 73.45%;
+  }
+  
+  .gallery-img {
+    background: url(/assets/images/community-horizont2.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 350px; 
+  }
+}
+
+@media (max-width: 478px) {
+  .community {
+    &__wrapper-artist {
+      padding: 59px 0 0 0;
+    }
+ 
+    &__title {
+      font-size: 30px;
+    }
+
+    &__subtitle {
+      font-size: 30px;
+    }
+
+    &__inner-artists {
+      padding: 48px 0 0 0;  
+    }
+
+    &__description {
+      font-size: 20px;
+      margin: 50px 0 30px 0;
+    }
+
+    &__description-block {
+      max-width: 331px;
+      margin: 0 0 0 auto;
+    }
+    
+  }
+
+  .community__line-community {
+    width: 195px;
+    transform: translate(88px, -53px);
+  }
+
+  .image-artists,
+  .image-gallery {
+    margin: 30px 0 0 auto;
+    width: 73.66%;
+  }
+
+  .community__img {
+    background: url(/assets/images/community-478horizont1.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 250px;
+  }
+
+  .gallery-img {
+    width: 100%;
+    height: 350px; 
+  }
+ 
+}
+
+@media (max-width: 360px) {
+  .community {
+    &__wrapper-artist {
+      padding: 39px 0 0 0;
+    }
+
+    &__subtitle {
+      font-size: 24px;
+    }
+
+    &__description-block {
+      max-width: 280px; 
+    }
+
+    &__description {
+      font-size: 20px;
+      margin: 30px 0 30px 0;
+    }
+  }
+  
+  .image-artists {
+    margin: 20px 0 0 auto;
+    width: 84.85%;
+  }
+
+  .image-gallery {
+    margin: 20px 0 0 auto;
+    width: 84.85%;
+  }
+
+  .gallery-img {
+    width: 100%;
+    height: 350px; 
+  }
+
+
 }
 // Ainagul end
 
