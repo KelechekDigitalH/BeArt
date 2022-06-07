@@ -12,15 +12,19 @@
   font-style: $fs-normal;
 }
 
-.expended-nav {
-  transform: scale(1.25, 0.9);
-}
-
 .rectangle-icon {
   @include rectangle;
   background-color: $color-dark-2d;
   margin: 0 23px 0 3px;
+
 }
+
+@media (max-width: 478px) {
+  .rectangle-icon {
+    margin: 0 13px 0 3px;  
+  } 
+}
+
 
 //Topscreen
 .topscreen {
@@ -61,7 +65,7 @@
     width: 160px;
     position: absolute;
     transform: translate(0, -80px);
-    left: 71%;
+    left: 69%;
 
     &__img {
       width: 100%;
@@ -70,12 +74,73 @@
 
 }
 
+
+@media (max-width: 768px) {
+  .topscreen {
+    &__title {
+      font-size: 50px;
+      padding: 70px 0 110px 0;  
+    }
+    
+    .dedicated {
+      font-size: 50px;
+    }
+
+    .video-btn {
+      width: 100px;
+      transform: translate(0, -50px);
+      left: 74%;  
+    }
+  }    
+}
+
+
+@media (max-width: 478px) {
+  .topscreen {
+    &__title {
+      font-size: 30px;
+      padding: 35px 0 47px 0;  
+    }
+    
+    .dedicated {
+      font-size: 35px;
+    }
+
+    .video-btn {
+      width: 100px;
+      transform: translate(0, -50px);
+      left: 71.5%;  
+    }
+  }    
+}
+
+@media (max-width: 360px) {
+  .topscreen {
+    &__title {
+      font-size: 24px;
+      padding: 50px 0 60px 0;
+      line-height: 141%;  
+    }
+    
+    .dedicated {
+      font-size: 24px;
+    }
+
+    .video-btn {
+      width: 100px;
+      transform: translate(0, -50px);
+      left: 71.5%;  
+    }
+  }    
+}
+
+
 //Our commitment
 .commitment {
   &__wrapper {
     max-width: 1120px;
     text-align: left;
-    padding: 121px 0 0 0;
+    padding: 150px 0 0 0;
   }
 
   &__title {
@@ -106,7 +171,9 @@
   &__description {
     max-width: 600px;
   }
+
 }
+
 
 .commitment__line-commitment {
   position: absolute;
@@ -123,7 +190,6 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 29px 0 0 0;
 }
 
 .second-block {
@@ -145,9 +211,152 @@
 
 .diamond {
   position: absolute;
-  // top: 128.5%;
-  left: 75.2%;
+  left: 72.5%;
   transform: translate(0, -464px);
+}
+
+@media (max-width: 768px) {
+
+  .first-block {
+    display: block;
+  }
+
+  .second-block {
+    display: block;
+  }
+
+  .third-block {
+    display: block;
+  }
+
+  .commitment {
+    &__wrapper {
+      padding: 129px 0 102px 0;
+    }
+    
+    .beart-description {
+      max-width: 520px;
+      margin: 0 0 0 auto;
+      padding: 70px 0 0 0;
+    }
+
+    &__description {
+      font-size: 20px;
+      padding: 30px 0 0 0;
+      margin: 0;
+    }
+
+
+  }
+
+  .section-title-block {
+    justify-content:flex-start;
+  }
+
+  .commitment__line-commitment {
+    position: absolute;
+    transform: translate(175px, -329px);
+  }
+
+  .second-block {
+    max-width: 520px;
+    margin: 49px 0 50px auto;
+  }
+
+  .third-block {
+    max-width: 520px;
+    margin: 0 0 0 auto;
+
+    &__description{
+      font-size: 24px;
+    }
+  }
+
+  .diamond {
+    width: 155px;
+    height: 163px;
+    left: 2.1%;
+    transform: translate(0, -581px);
+  }
+}
+
+@media (max-width: 478px) {
+  .commitment {
+    &__wrapper {
+      padding: 102px 0 103px 0;
+    }
+
+    &__title {
+      font-size: 30px;  
+    }
+
+    &__subtitle {
+      font-size: 20px;  
+    }
+
+    &__description{
+      font-size: 16px;
+    }
+
+    .beart-description {
+      max-width: 332px;
+      margin: 0 0 0 auto;
+      padding: 61px 0 0 0;
+    }
+
+    .second-block {
+      max-width: 330px;
+      margin: 48px 0 48px auto;
+    }
+
+    .third-block {
+      max-width: 330px;
+    }
+  
+  } 
+
+  .commitment__line-commitment {
+    position: absolute;
+    transform: translate(122px, -408px);
+    width: 169.37px;
+  }
+  
+  .diamond {
+    left: 2%;
+    transform: translate(-86px, -602px);
+  }
+  
+}
+
+@media (max-width: 360px) {
+  .commitment {
+    &__wrapper {
+      padding: 84px 0 59px 0;
+      
+      .second-block {
+        max-width: 280px;
+        margin: 64px 0 26px auto;
+      }
+    
+      .third-block {
+        max-width: 280px;
+      }
+    }
+
+    .beart-description {
+      font-size: 16px;
+      max-width: 280px;
+      margin: 0 0 0 auto;
+      padding: 61px 0 0 0;
+      line-height: 137%;
+    }
+  }
+  
+  .diamond {
+    left: 2%;
+    transform: translate(-51px, -623px);
+  }
+
 }
 
 // Important issues 
@@ -155,7 +364,7 @@
   background-color: $color-dark-2d;
 
   &__wrapper {
-    padding: 120px 0 158px 0;
+    padding: 120px 0 155px 0;
   }
 
   &__title {
@@ -180,6 +389,7 @@
   &__description {
     max-width: 600px;
     @include inner-description;
+    line-height: 142%;
     color: $color-white;
   }
 
@@ -187,7 +397,8 @@
 
 .issues-block {
   max-width: 1078px;
-  margin: 120px 0 0 auto;
+  margin: 120px 3px 0 auto;
+  
 }
 
 .issues {
@@ -249,7 +460,202 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  padding: 0 164px 0 200px;
+  padding: 0 160px 0 200px;
+}
+
+
+@media (max-width: 1110px) {
+  .issues {
+    flex-wrap: wrap;
+    margin: 0px 0px 0px 0px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .important-issues {
+    &__wrapper {
+      padding: 70px 0 114px 0;
+    }
+
+    &__title {
+      font-size: 50px;
+    }
+
+    &__description {
+      font-size: 20px;
+      margin: 50px 0 0 0;
+      line-height: 140%;
+    }
+
+  }
+
+  .issues {
+    flex-wrap: wrap;
+    margin: 0 0 70px 0;
+
+    &__item:nth-child(4),
+    &__item:nth-child(5) {
+      margin-top: -38px;   
+    }
+
+    &__item:nth-child(4) {
+      margin-left: 0;
+    }
+  }
+
+  .issues-block {
+    margin: 70px 0 0 auto;
+  }
+
+  .believe-block  {
+    display: block;
+    max-width: 520px;
+    margin: 0 0 0 auto;
+    padding: 0;
+  }
+ 
+}
+
+@media (max-width: 478px) {
+  .important-issues  {
+    &__wrapper {
+      padding: 40px 0 64px 0;
+    }
+
+    &__title {
+      font-size: 30px;
+      max-width: 432px;
+    }
+
+    &__description {
+      font-size: 16px;
+      margin: 40px 0 0 0;
+      line-height: 138%;
+    }
+  }
+
+  .issues-block {
+    max-width: 450px;
+    margin: 50px 0 50px auto;
+  }
+
+  .issues {
+    margin: 0 0 50px 0;
+
+    &__item+&__item {
+      margin-left: -12px;
+    }
+
+    &__item-text {
+      font-size: 16px;
+    }
+    
+
+    &__item:nth-child(3),
+    &__item:nth-child(4) {
+      margin-top: -12px;
+    }
+
+    &__item:nth-child(3) {
+      margin-left: 0px;
+    }
+
+    &__item:nth-child(5) {
+      margin-left: 7px;
+    }
+
+  .first-item {
+    max-width: 136px;
+  }
+  
+  .second-item {
+    max-width: 131px;
+  }
+
+  .fifth-item{
+    font-size: 18px;
+  }   
+  }
+
+  .believe-block {
+    max-width: 331px;
+  }
+
+}
+
+@media (max-width: 360px) {
+  .important-issues {
+    &__wrapper {
+      padding: 40px 0 88px 0;    //по макету bottom 70
+    }
+
+    &__title {
+      font-size: 20px;
+    }
+
+    &__subtitle {
+      font-size: 20px;
+    }
+    &__description {
+      font-size: 16px;
+      line-height: 140%;
+    }
+  }
+
+  .issues {
+    &__item {
+      width: 169px;
+      height: 169px;
+    }
+
+    &__item-text {
+      font-size: 12px;
+    }
+
+    &__item+&__item {
+      margin-left: -8px;
+    }
+
+    &__item:nth-child(3),
+    &__item:nth-child(4) {
+      margin-top: -8px;
+    }
+
+    &__item:nth-child(3) {
+      margin-left: 0px;
+    }
+
+    &__item:nth-child(5) {
+      margin-left: 5px;
+      margin-top: -31px;
+    }
+
+    .first-item {
+      max-width: 100px;
+    }
+  
+    .second-item {
+      max-width: 96px;
+    }
+  
+    .third-item {
+      max-width: 119px;
+    }
+  
+    .fourth-item {
+      max-width: 142px;
+    }
+  
+    .fifth-item {
+      max-width: 133px;
+      font-size: 12px;
+    }
+  }
+
+  .believe-block {
+    max-width: 280px;
+  }
 }
 
 //Our community
@@ -260,7 +666,7 @@
     &-artist {
       display: flex;
       gap: 60px;
-      padding: 150px 0 0 0;
+      padding: 83px 0 0 0;
     }
 
     &-gallery {
@@ -324,17 +730,175 @@
 
 .image-artists {
   margin: 67px 0 0 0;
-  height: 600px;
+  width: 31.25%;
 }
 
 .community__img {
+  background: url(/assets/images/community-img1.png) no-repeat;
+  background-size: cover;
+  background-position: center;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: 600px;
 }
 
 .image-gallery {
+  width: 31.25%;
+}
+
+.gallery-img {
+  background: url(/assets/images/community-img2.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
   height: 600px;
+}
+
+@media (max-width: 768px) {
+  .community {
+    &__wrapper-artist {
+      display: block;
+      padding: 98px 0 0 0;
+    }
+
+    &__inner-artists {
+      padding: 73px 0 0 0;
+    }
+
+    &__subtitle {
+      font-size: 36px;
+    }
+
+    &__description-block {
+      max-width: 520px;
+      margin: 0 0 0 188px;
+    }
+
+    &__wrapper-gallery {
+      display: block;
+      padding: 3px 0 0 0;
+    }
+  }
+
+  .image-artists {
+    margin: 31px 0 0 auto;
+    width: 73.45%;
+  
+  }
+
+  .community__img {
+    background: url(/assets/images/community-horizont1.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 250px; 
+  }
+  
+  .image-gallery {
+    margin: 31px 0 0 auto;
+    width: 73.45%;
+  }
+  
+  .gallery-img {
+    background: url(/assets/images/community-horizont2.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 350px; 
+  }
+}
+
+@media (max-width: 478px) {
+  .community {
+    &__wrapper-artist {
+      padding: 59px 0 0 0;
+    }
+ 
+    &__title {
+      font-size: 30px;
+    }
+
+    &__subtitle {
+      font-size: 30px;
+    }
+
+    &__inner-artists {
+      padding: 48px 0 0 0;  
+    }
+
+    &__description {
+      font-size: 20px;
+      margin: 50px 0 30px 0;
+    }
+
+    &__description-block {
+      max-width: 331px;
+      margin: 0 0 0 auto;
+    }
+    
+  }
+
+  .community__line-community {
+    width: 195px;
+    transform: translate(88px, -53px);
+  }
+
+  .image-artists,
+  .image-gallery {
+    margin: 30px 0 0 auto;
+    width: 73.66%;
+  }
+
+  .community__img {
+    background: url(/assets/images/community-478horizont1.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 250px;
+  }
+
+  .gallery-img {
+    width: 100%;
+    height: 350px; 
+  }
+ 
+}
+
+@media (max-width: 360px) {
+  .community {
+    &__wrapper-artist {
+      padding: 39px 0 0 0;
+    }
+
+    &__subtitle {
+      font-size: 24px;
+    }
+
+    &__description-block {
+      max-width: 280px; 
+    }
+
+    &__description {
+      font-size: 20px;
+      margin: 30px 0 30px 0;
+    }
+  }
+  
+  .image-artists {
+    margin: 20px 0 0 auto;
+    width: 84.85%;
+  }
+
+  .image-gallery {
+    margin: 20px 0 0 auto;
+    width: 84.85%;
+  }
+
+  .gallery-img {
+    width: 100%;
+    height: 350px; 
+  }
+
+
 }
 // Ainagul end
 

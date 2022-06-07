@@ -47,3 +47,25 @@
   }
 }
 
+.burger {
+  display: none;
+}
+
+
+@media (max-width: 768px) {
+  
+  .nav__list {
+    display: none;
+  }  
+
+  .burger {
+    display: block;
+  }
+}
+
+
+@media (max-width: 478px) {
+  .header-inner {
+    padding: 11px 0;
+  }
+}
