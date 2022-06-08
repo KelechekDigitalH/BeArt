@@ -3,7 +3,7 @@
 //Header
 
 .header {
-  position: sticky;
+  position: fixed;
   width: 100%;
   top:0;
   left:0;
@@ -11,16 +11,19 @@
 
 .header::before {
   content:'';
- position: absolute;
- top: 0;
- left:0;
- width: 100%;
- height: 100%;
- background-color: $color-light-grey;
- z-index: 3;
-  
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background-color: $color-light-grey;
+  z-index: 3;
+  transition: transform .1s linear;
 }
 
+.header.hide {
+  transform: translateY(-106px);
+}
 
 
 .header-inner {
@@ -89,6 +92,8 @@
 
 @media (max-width: 768px) {
 
+  
+
   .header-logo {
     z-index: 3;
   }
@@ -144,6 +149,10 @@
    margin-top: 106px;
    z-index: 1000;
  }
+
+ .nav__list.hide {
+  transform: translateY(-120%);
+}
 
   .nav__link {
     font-size: 20px;
