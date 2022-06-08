@@ -1,3 +1,16 @@
+/***Burger***/
+
+document.querySelector('.burger').addEventListener('click', function () {
+    document.querySelector('.burger', '.nav__list').classList.toggle('active');
+    document.querySelector('.nav__list').classList.toggle('open');
+})
+
+
+
+
+
+
+/***Title animation */
 const ourCommitment = new Vivus(
   'line-commitment',
   {
