@@ -2,6 +2,7 @@
 
 // Ainagul
 //Common style properties
+
 .archivo {
   font-family: $ff-archivo;
   font-style: $fs-normal;
@@ -28,6 +29,7 @@
 
 //Topscreen
 .topscreen {
+  padding-top: 106px;
   background-color: $color-grey;
 
   &__wrapper {
@@ -110,6 +112,7 @@
       width: 100px;
       transform: translate(0, -50px);
       left: 71.5%;  
+      z-index: -1;
     }
   }    
 }
