@@ -1847,6 +1847,43 @@
   }
 }
 
+@media screen and (max-width: 283.98px) {
+  .roadmap__inner__names-moon {
+    padding: 20px 0 0 0;
+  }
+
+  .roadmap__inner__data-texts {
+    display: block;
+    position: absolute;
+    left: 46%;
+    top: -3%;
+  }
+
+  .roadmap__inner__data-text {
+    &:nth-child(1){
+      margin: 0 0 554px 0;
+    }
+  }
+
+  .roadmap__inner__data-text + .roadmap__inner__data-text {
+    margin: 0 0 280px 0;
+  }
+
+  .roadmap__inner__name-blocks + .roadmap__inner__name-blocks {
+    margin: 50px 0 0 0;
+  }
+
+  .roadmap__inner__moon + .roadmap__inner__moon {
+    margin: 5px 0 0 0;
+  }
+
+  .roadmap__inner__data-roadmap-line {
+    width: 992px;
+    transform: translate(-447px, -550px) rotate(90deg);
+    margin: 0;
+  }
+}
+
 // Our Team
 .our-team {
   padding: 77px 0 149px 0;
@@ -2225,6 +2262,12 @@
 @media screen and (max-width: 325.98px) {
   .our-partners__inner__description {
     max-width: 170px;
+  }
+}
+
+@media screen and (max-width: 283.98px) {
+  .our-partners__inner__description {
+    max-width: 130px;
   }
 }
 
