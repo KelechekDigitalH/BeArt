@@ -467,6 +467,31 @@
 }
 
 
+.stroke-text {
+  @include inner-title;
+  font-size: 96px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px  #ACACAC;
+  white-space: nowrap;
+  display: inline-block;
+  // animation: marquee 30s linear infinite;
+}
+
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  position: absolute;
+  top: 2794px;
+}
+
+// @keyframes marquee {
+//   0% { transform: translateX(100%); }
+//   100% { transform: translateX(-100%); }
+// }
+
+
+
+
 @media (max-width: 1110px) {
   .issues {
     flex-wrap: wrap;
@@ -516,6 +541,16 @@
     max-width: 520px;
     margin: 0 0 0 auto;
     padding: 0;
+  }
+
+  .stroke-text {
+    font-size: 64px;
+  }
+
+  .marquee {
+    overflow: hidden;
+    position: absolute;
+    top: 3033px;
   }
  
 }
@@ -583,6 +618,16 @@
 
   .believe-block {
     max-width: 331px;
+  }
+
+  .stroke-text {
+    font-size: 45px;
+  }
+
+  .marquee {
+    overflow: hidden;
+    position: absolute;
+    top: 2754px;
   }
 
 }
@@ -659,6 +704,15 @@
   .believe-block {
     max-width: 280px;
   }
+
+ 
+
+  .marquee {
+    overflow: hidden;
+    position: absolute;
+    top: 2524px;
+  }
+ 
 }
 
 //Our community
