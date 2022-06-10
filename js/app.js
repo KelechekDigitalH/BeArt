@@ -79,3 +79,70 @@ const footer = new Vivus(
     duration: 150,
   },
 );
+
+
+
+/***Marquee animation ***/
+
+function animateMarquee(el, duration) {
+  const strokeEl = el.querySelector('.stroke-text');
+  const innerWidth = strokeEl.offsetWidth;
+  const cloneEl = strokeEl.cloneNode(true);
+  el.appendChild(cloneEl);
+
+  let start = performance.now();
+  let progress;
+  let translateX;
+
+  requestAnimationFrame(function step(now) {
+    progress = (now - start) / duration;
+ 
+    if (progress > 1) {
+    	progress %= 1;
+      start = now;
+    }
+
+    translateX = innerWidth * progress;
+    
+    strokeEl.style.transform = `translate3d(-${translateX}px, 0 , 0)`;
+    cloneEl.style.transform = `translate3d(-${translateX}px, 0 , 0)`;
+    requestAnimationFrame(step);
+  });
+}
+
+const marquee = document.querySelector('#marquee-text');
+
+animateMarquee(marquee, 18000);
+
+
+// экинчи вариант
+
+// var wrapper = document.querySelector('.marquee'),
+//     marquee = document.querySelector('.stroke-text'),   
+//     wrapperWidth = wrapper.offsetWidth,
+//     marqueeWidth = marquee.scrollWidth;
+    
+// document.querySelector('button').onclick = function() {
+//   clearInterval(interval)
+// }
+    
+// function move() {
+//   var currentTX = getComputedStyle(marquee).transform.split(',');
+//   if( currentTX[4] === undefined ) {
+//     currentTX = -1;
+//   } else {
+//     currentTX = parseFloat(currentTX[4]) - 1;
+//   }
+  
+//   if(-currentTX >= marqueeWidth) {
+//     marquee.style.transform = 'translateX(' + wrapperWidth + 'px)';
+  
+//   } else {
+//     marquee.style.transform = 'translateX(' + currentTX + 'px)';
+//   }
+// }
+
+// var interval = setInterval(move, 10);
+
+
+
