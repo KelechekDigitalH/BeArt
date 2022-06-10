@@ -40,6 +40,8 @@
   &__img {
     height: 100%;
   }
+
+  
 }
 
 
@@ -77,14 +79,13 @@
   .hover-img {
     display: none;
     padding-right: 8px;
-    transition: transform .8s ease-in-out;
   }
+
 
   &__link:hover  .hover-img{
     display: block;
-    transform: rotate(360deg);
   }
-
+  
   
 }
 
