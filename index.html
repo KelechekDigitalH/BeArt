@@ -12,8 +12,8 @@
 </head>
 
 <body>
-<!-- Ainagul -->
-<header>
+<!-- Айнагүл -->
+<header class="header">
     <div class="container">
         <div class="header-inner">
             <a class="header-logo" href="#">
@@ -22,39 +22,57 @@
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a class="nav__link" href="#">What we do</a>
+                        <a class="nav__link" href="#">
+                            <img class="hover-img" src="./assets/images/rectangle.svg" alt="design element">
+                            What we do
+                        </a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link" href="#">Paintings</a>
+                        <a class="nav__link" href="#">
+                            <img class="hover-img" src="./assets/images/rectangle.svg" alt="design element">
+                            Paintings
+                        </a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link" href="#">Work</a>
+                        <a class="nav__link" href="#">
+                            <img class="hover-img" src="./assets/images/rectangle.svg" alt="design element">
+                            Work
+                        </a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link" href="#">Careers</a>
+                        <a class="nav__link" href="#">
+                            <img class="hover-img" src="./assets/images/rectangle.svg" alt="design element">
+                            Careers
+                        </a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link" href="#">Connect</a>
+                        <a class="nav__link" href="#">
+                            <img class="hover-img" src="./assets/images/rectangle.svg" alt="design element">
+                            Connect
+                        </a>
                     </li>
                 </ul>
-                <div class="burger">
-                    <img src="./assets/images/burger.svg" alt="burger">
-                </div>
             </nav>
+            <div class="burger">
+                <span></span>
+            </div>
         </div>       
     </div>
 </header>
 
-<main>
+<main class="main">
     <section class="topscreen">
        <div class="topscreen__wrapper">
            <div class="container">
                 <h1 class="topscreen__title archivo">
                     <span class="dedicated cormorant">BeART</span> creates a new paradigm of owning insured & exclusive hybrid <span class="dedicated cormorant">NFTS</span> backed up with original paintings & jewelry 
                 </h1>
-                <a class="video-btn" href="#">
-                    <img class="video-btn__img" src="./assets/images/video-btn.png" alt="video-btn">
-                </a>           
+                <div class="video-btn-block">
+                    <div class="round-ticker"></div>
+                    <a class="video-btn" href="#">
+                        <img class="video-btn__img" src="./assets/images/topscreen-play-icon.svg" alt="video-btn">
+                    </a>             
+                </div>               
            </div>   
        </div>   
     </section>
@@ -111,7 +129,7 @@
                 <div class="believe-block">
                     <h3 class="important-issues__subtitle archivo" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">WE BELIEVE</h3>
                     <p class="important-issues__description" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">Physical art assets should be valued and preserved as a legacy for future generations. We believe that modern technologies will benefit the real world by facilitating access to valuable assets.</p>
-                </div>            
+                </div>
             </div>
         </div>
     </section>  

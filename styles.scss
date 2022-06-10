@@ -19,24 +19,24 @@ body {
   background: $color-light-grey;
 }
 
+body.menu-opened{
+  overflow: hidden;
+}
+
 .container {
   max-width: 1310px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
-
 @media (max-width: 768px) {
   .container {
     padding: 0 30px;
   }
-
 }
-
 
 @media (max-width: 478px) {
   .container {
     padding: 0 15px;
   }
-
 }
