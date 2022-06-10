@@ -63,14 +63,32 @@
     transform: scale(unset);
   }
 
-  .video-btn {
-    width: 160px;
+
+  .video-btn-block {
     position: absolute;
     transform: translate(0, -80px);
-    left: 69%;
+    left: 71%;
+    
+  }
+
+  .round-ticker {
+    width: 160px;
+    height: 160px;
+    background: url(/assets/images/topscreen-video-btn-words.svg) no-repeat;
+    background-size: contain;
+    background-position: center;
+    animation: imganimate 7s linear infinite;
+    position: relative;
+  }
+
+  .video-btn {
+    text-decoration: none;
 
     &__img {
-      width: 100%;
+      position: absolute;
+      transform: translate(53px, 51px);
+      top: 0;
+      width: 57.11px;
     }
   }
 
@@ -88,31 +106,51 @@
       font-size: 50px;
     }
 
-    .video-btn {
-      width: 100px;
-      transform: translate(0, -50px);
-      left: 74%;  
+    .video-btn-block {
+      position: absolute;
+      transform: translate(0, -49px);
+      left: 74%;
+      
     }
-  }    
-}
+
+    .round-ticker {
+      width: 100px;
+      height: 100px;
+      background: url(/assets/images/topscreen-video-btn-words768.svg) no-repeat;
+      background-size: contain;
+      background-position: center;
+      animation: imganimate 7s linear infinite;
+      position: relative;
+    }
+
+    
+    .video-btn__img {
+      position: absolute;
+      transform: translate(30px, 29px);
+      top: 0;
+      width: 41.12px;
+    }
+  }
+}    
+
 
 
 @media (max-width: 478px) {
   .topscreen {
+    padding-top: 89px;
+
     &__title {
       font-size: 30px;
-      padding: 35px 0 47px 0;  
+      padding: 35px 0 46px 0;  
     }
     
     .dedicated {
       font-size: 35px;
     }
 
-    .video-btn {
-      width: 100px;
-      transform: translate(0, -50px);
-      left: 71.5%;  
-      z-index: -1;
+    .video-btn-block {
+      transform: translate(0, -48px);
+      left: 71.5%;
     }
   }    
 }
@@ -129,10 +167,22 @@
       font-size: 24px;
     }
 
-    .video-btn {
-      width: 100px;
-      transform: translate(0, -50px);
-      left: 71.5%;  
+    .video-btn-block {
+      position: absolute;
+      transform: translate(0, -39px);
+      left: 73.5%;  
+    }
+
+    .round-ticker {
+      width: 80px;
+      height: 80px;
+    }
+
+    .video-btn__img {
+      position: absolute;
+      transform: translate(24px, 24px);
+      top: 0;
+      width: 33.25px;
     }
   }    
 }
@@ -334,7 +384,7 @@
 @media (max-width: 360px) {
   .commitment {
     &__wrapper {
-      padding: 84px 0 59px 0;
+      padding: 84px 0 58px 0;
       
       .second-block {
         max-width: 280px;
