@@ -186,12 +186,21 @@
 @media screen and (max-width: 768.98px) {
   .footer__inner__title {
     max-width: 668px;
+    line-height: 120%;
+  }
+
+  .footer {
+    padding: 71px 0 40px 0;
+  }
+
+  .footer__inner__rectangle-title {
+    margin: 0 0 69px 0;
   }
 
   .footer__inner__email-address {
     display: block;
 
-    max-width: 520px;
+    max-width: 480px;
   }
 
   .footer__inner__email-block {
@@ -201,6 +210,11 @@
   .footer__inner__address-block__text {
     max-width: 520px;
     margin: 70px 0 0 0;
+    font-size: 20px;
+  }
+
+  .footer__inner__address-block__tel {
+    font-size: 20px;
   }
 
   .footer__social-all-items {
@@ -208,11 +222,15 @@
   }
 
   .footer__social {
-    padding: 0 0 0 188px;
+    padding: 0 0 0 218px;
   }
 
   .footer__nav__inner {
     justify-content: center;
+  }
+  
+  .footer__nav {
+    margin: 43px 0 41px 0;
   }
 
   .footer__nav__item__link {
