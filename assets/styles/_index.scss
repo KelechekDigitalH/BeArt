@@ -39,6 +39,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+    // position: relative;
+    // z-index: -2;
   }
 
   &__title {
@@ -63,12 +65,10 @@
     transform: scale(unset);
   }
 
-
   .video-btn-block {
     position: absolute;
     transform: translate(0, -80px);
-    left: 76.8%;
-
+    left: 71%;
   }
 
   .round-ticker {
@@ -262,7 +262,7 @@
 
 .diamond {
   position: absolute;
-  left: 72.5%;
+  left: 75%;
   transform: translate(0, -464px);
 }
 
@@ -772,7 +772,7 @@
     &-artist {
       display: flex;
       gap: 60px;
-      padding: 150px 0 0 0;
+      padding: 83px 0 0 0;
     }
 
     &-gallery {
@@ -804,6 +804,7 @@
 
   &__description {
     @include inner-description;
+    line-height: 142%;
     margin: 70px 0 50px 0;
   }
 
@@ -886,7 +887,7 @@
   }
 
   .image-artists {
-    margin: 31px 0 0 auto;
+    margin: 29px 0 0 auto;
     width: 73.45%;
 
   }
@@ -900,7 +901,7 @@
   }
 
   .image-gallery {
-    margin: 31px 0 0 auto;
+    margin: 29px 0 0 auto;
     width: 73.45%;
   }
 
@@ -948,9 +949,13 @@
     transform: translate(88px, -53px);
   }
 
-  .image-artists,
+  .image-artists {
+    margin: 29px 0 0 auto;
+    width: 73.66%;
+  }
+
   .image-gallery {
-    margin: 30px 0 0 auto;
+    margin: 27px 0 0 auto;
     width: 73.66%;
   }
 
@@ -990,12 +995,12 @@
   }
 
   .image-artists {
-    margin: 20px 0 0 auto;
+    margin: 18px 0 0 auto;
     width: 84.85%;
   }
 
   .image-gallery {
-    margin: 20px 0 0 auto;
+    margin: 18px 0 0 auto;
     width: 84.85%;
   }
 
