@@ -67,7 +67,7 @@
   .video-btn-block {
     position: absolute;
     transform: translate(0, -80px);
-    left: 71%;
+    left: 76.8%;
 
   }
 
@@ -772,7 +772,7 @@
     &-artist {
       display: flex;
       gap: 60px;
-      padding: 83px 0 0 0;
+      padding: 150px 0 0 0;
     }
 
     &-gallery {
@@ -1069,8 +1069,17 @@
     margin: 70px 0 0 0;
   }
 
+  .artlovers-customers {
+    padding: 70px 0 100px 0;
+  }
+
+  .artlovers-customers__inner__artlovers__benefits {
+    max-width: 520px;
+  }
+
   .artlovers-customers__inner__artlovers__title {
-    font-size: 36px
+    font-size: 36px;
+    max-width: 516px;
   }
 
   .artlovers-customers__inner__artlovers__texts {
@@ -1194,6 +1203,10 @@
     font-size: 36px
   }
 
+  .artlovers-customers__inner__customers__benefits {
+    max-width: 520px;
+  }
+
   .artlovers-customers__inner__customers__texts {
     display: block;
     max-width: 520px;
@@ -1210,7 +1223,7 @@
   }
 
   .artlovers-customers__inner__customers__play-icon {
-    transform: translate(-400%, 160%);
+    transform: translate(-378%, 150%);
   }
 }
 
@@ -1364,7 +1377,7 @@
   width: 100%;
   height: 1px;
   background-color: $color-white;
-  transform: translate(0, -685px);
+  transform: translate(0, -675px);
 }
 
 .roadmap__inner__names-moon {
@@ -1490,8 +1503,16 @@
 
 // Media roadmap
 @media screen and (max-width: 768.98px) {
+  .roadmap {
+    padding: 120px 0;
+  }
+
   .roadmap__inner__rectangle-title {
     margin: 0 0 70px 0;
+  }
+
+  .roadmap__inner__moon__title {
+    font-size: 20px;
   }
 
   .roadmap__inner__line-roadmap {
@@ -1499,7 +1520,7 @@
   }
 
   .roadmap__inner__data-block {
-    max-width: 674px;
+    max-width: 659px;
   }
 
   .roadmap__inner__data-text {
@@ -1523,8 +1544,8 @@
   }
 
   .roadmap__inner__data-roadmap-line {
-    width: 540px;
-    transform: translate(0, -720px);
+    width: 500px;
+    transform: translate(20%, -692px);
     margin: 0;
   }
 }
@@ -1993,7 +2014,7 @@
 
 // Our Team
 .our-team {
-  padding: 77px 0 149px 0;
+  padding: 77px 0 1153px 0;
 }
 
 .our-team__inner__title--animate-img {
@@ -2047,7 +2068,7 @@
 
 .our-team__inner__description-block {
   padding: 0 360px 0 320px;
-  margin: 0 0 100px 0;
+  // margin: 0 0 100px 0;
 }
 
 .our-team__inner__description-text {
@@ -2057,8 +2078,21 @@
 
 // Media Our Team
 @media screen and (max-width: 768.98px) {
+  .our-team {
+    padding: 65px 0 886px 0;
+  }
+
+  .our-team__inner__title--animate-img {
+    margin: 0 0 25px 0;
+  }
+
+  .our-team__inner__line-our-team {
+    position: absolute;
+    transform: translate(135px, -140px);
+  }
+  
   .our-team__inner__animate-img {
-    transform: translate(0, -45px);
+    transform: translate(0, -20px);
   }
 
   .our-team__inner__description-block {
@@ -2173,8 +2207,20 @@
 
 // Media our partners
 @media screen and (max-width: 768.98px) {
+  .our-partners {
+    padding: 120px 0 107px 0;
+  }
+
   .our-partners__inner__block-partners {
     display: block;
+  }
+
+  .our-partners__inner__rectangle-title {
+    margin: 0 0 70px 0;
+  }
+
+  .our-partners__inner__line-our-partners {
+    transform: translate(134px, -153px);
   }
 
   .our-partners__inner__partner {
