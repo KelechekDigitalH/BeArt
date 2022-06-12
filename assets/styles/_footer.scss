@@ -228,7 +228,7 @@
   .footer__nav__inner {
     justify-content: center;
   }
-  
+
   .footer__nav {
     margin: 43px 0 41px 0;
   }
@@ -239,7 +239,7 @@
     color: $color-white;
   }
 
-  .footer__nav__item + .footer__nav__item {
+  .footer__nav__item+.footer__nav__item {
     margin: 0 0 0 45px;
   }
 
@@ -324,7 +324,7 @@
     color: $color-white;
   }
 
-  .footer__nav__item + .footer__nav__item {
+  .footer__nav__item+.footer__nav__item {
     margin: 20px 0 0 0;
   }
 
