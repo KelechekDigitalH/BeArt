@@ -74,7 +74,7 @@
   .round-ticker {
     width: 160px;
     height: 160px;
-    background: url(/assets/images/topscreen-video-btn-words.svg) no-repeat;
+    background: url(../assets/images/topscreen-video-btn-words.svg) no-repeat;
     background-size: contain;
     background-position: center;
     animation: imganimate 7s linear infinite;
@@ -116,7 +116,7 @@
     .round-ticker {
       width: 100px;
       height: 100px;
-      background: url(/assets/images/topscreen-video-btn-words768.svg) no-repeat;
+      background: url(../assets/images/topscreen-video-btn-words768.svg) no-repeat;
       background-size: contain;
       background-position: center;
       animation: imganimate 7s linear infinite;
@@ -841,7 +841,7 @@
 }
 
 .community__img {
-  background: url(/assets/images/community-img1.png) no-repeat;
+  background: url(../assets/images/community-img1.png) no-repeat;
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -853,7 +853,7 @@
 }
 
 .gallery-img {
-  background: url(/assets/images/community-img2.png) no-repeat;
+  background: url(../assets/images/community-img2.png) no-repeat;
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -893,7 +893,7 @@
   }
 
   .community__img {
-    background: url(/assets/images/community-horizont1.png) no-repeat;
+    background: url(../assets/images/community-horizont1.png) no-repeat;
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -906,7 +906,7 @@
   }
 
   .gallery-img {
-    background: url(/assets/images/community-horizont2.png) no-repeat;
+    background: url(../assets/images/community-horizont2.png) no-repeat;
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -960,7 +960,7 @@
   }
 
   .community__img {
-    background: url(/assets/images/community-478horizont1.png) no-repeat;
+    background: url(../assets/images/community-478horizont1.png) no-repeat;
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -2489,13 +2489,13 @@
   left: 494px;
   top: 210px;
   border-radius: 100%;
-  background-image: url(/assets/images/arrow-right.png);
+  background-image: url(../assets/images/arrow-right.png);
   z-index: 1;
 }
 
 .swiper-prev {
   box-sizing: border-box;
-  background-image: url(/assets/images/arrow-left.png);
+  background-image: url(../assets/images/arrow-left.png);
   position: absolute;
   width: 102px;
   height: 102px;
