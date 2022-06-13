@@ -28,6 +28,7 @@
   transform: translateY(-106px);
 }
 
+
 .header-inner {
   display:flex;
   align-items: center;
@@ -77,16 +78,7 @@
     position: relative;
   }
 
-  // .hover-img {
-  //   display: none;
-  //   padding-right: 8px;
-  //   transition: all 5s linear;
-  // }
-
-  // &__link:hover  .hover-img{
-  //   display: block;
-  // }
-
+ 
   .hov__rectangle {
     @include rectangle;
     background-color: $color-dark;
