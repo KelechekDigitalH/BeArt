@@ -155,17 +155,4 @@ const swiper = new Swiper(".mySwiper", {
 });
 
 
-const elements = document.querySelectorAll('.swiper-slide');
-
-function activeSlide() {
-  for(let element of elements) {
-
-   if(element.classList.contains('swiper-slide-active')) {
-    document.querySelector('.swiper-slide-active .info-content').classList.toggle('active-info');
-   }
-    
-   }
-}
-
-activeSlide();
 
