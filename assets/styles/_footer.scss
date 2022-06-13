@@ -100,9 +100,16 @@
   color: $color-white;
 }
 
+.important-footer {
+  display: inline-block;
+  position: relative;
+}
+
 .footer__inner__line-footer {
   position: absolute;
-  transform: translate(-291px, -45px);
+  top: -9px;
+  left: -14px;
+  width: 299px;
 }
 
 // Footer Navigation
@@ -252,7 +259,8 @@
   }
 
   .footer__inner__line-footer {
-    transform: translate(30px, -166px);
+    top: -14px;
+    left: -14px;
   }
 }
 
@@ -338,6 +346,8 @@
   }
 
   .footer__inner__line-footer {
-    transform: translate(30px, -137px);
+    top: -8px;
+    left: -5px;
+    width: 197px;
   }
 }
