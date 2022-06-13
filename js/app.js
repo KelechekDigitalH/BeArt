@@ -102,6 +102,8 @@ AOS.init({
 });
 
 
+
+
 /***Marquee animation ***/
 // function animateMarquee(el, duration) {
 //   const strokeEl = el.querySelector('.stroke-text');
@@ -131,7 +133,9 @@ AOS.init({
 // const marquee = document.querySelector('#marquee-text');
 // animateMarquee(marquee, 18000);
 
-// Carousel
+
+
+// Carousel-swiper
 
 const swiper = new Swiper(".mySwiper", {
   slidesPerView: 4,
@@ -152,19 +156,16 @@ const swiper = new Swiper(".mySwiper", {
 
 
 const elements = document.querySelectorAll('.swiper-slide');
-const activeInfoContent = document.querySelector('.info-content');
 
 function activeSlide() {
   for(let element of elements) {
 
    if(element.classList.contains('swiper-slide-active')) {
-    activeInfoContent.classList.add('active-info');
-   }
-   else {
-    activeInfoContent.classList.remove('active-info');
+    document.querySelector('.swiper-slide-active .info-content').classList.toggle('active-info');
    }
     
    }
 }
 
 activeSlide();
+
