@@ -102,37 +102,34 @@ AOS.init({
 });
 
 
-
-
 /***Marquee animation ***/
-// function animateMarquee(el, duration) {
-//   const strokeEl = el.querySelector('.stroke-text');
-//   const innerWidth = strokeEl.offsetWidth;
-//   const cloneEl = strokeEl.cloneNode(true);
-//   el.appendChild(cloneEl);
+function animateMarquee(el, duration) {
+  const strokeEl = el.querySelector('.stroke-text');
+  const innerWidth = strokeEl.offsetWidth;
+  const cloneEl = strokeEl.cloneNode(true);
+  el.appendChild(cloneEl);
 
-//   let start = performance.now();
-//   let progress;
-//   let translateX;
+  let start = performance.now();
+  let progress;
+  let translateX;
 
-//   requestAnimationFrame(function step(now) {
-//     progress = (now - start) / duration;
+  requestAnimationFrame(function step(now) {
+    progress = (now - start) / duration;
  
-//     if (progress > 1) {
-//     	progress %= 1;
-//       start = now;
-//     }
+    if (progress > 1) {
+    	progress %= 1;
+      start = now;
+    }
 
-//     translateX = innerWidth * progress;
+    translateX = innerWidth * progress;
     
-//     strokeEl.style.transform = `translate3d(-${translateX}px, 0 , 0)`;
-//     cloneEl.style.transform = `translate3d(-${translateX}px, 0 , 0)`;
-//     requestAnimationFrame(step);
-//   });
-// }
-// const marquee = document.querySelector('#marquee-text');
-// animateMarquee(marquee, 18000);
-
+    strokeEl.style.transform = `translate3d(-${translateX}px, 0 , 0)`;
+    cloneEl.style.transform = `translate3d(-${translateX}px, 0 , 0)`;
+    requestAnimationFrame(step);
+  });
+}
+const marquee = document.querySelector('#marquee-text');
+animateMarquee(marquee, 18000);
 
 
 // Carousel-swiper
