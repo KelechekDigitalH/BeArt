@@ -2123,7 +2123,8 @@
 .swiper-slide-active {
   transform: scale(1.2);
   transition: .4s;
-  margin: 0 40px !important;
+  margin: 0 130px 0 40px !important;
+  position: relative;
 }
 
 
@@ -2174,20 +2175,20 @@
   position: absolute;
   width: 102px;
   height: 102px;
-  left: 494px;
+  left: 539px;
   top: 210px;
   border-radius: 100%;
-  background-image: url(/assets/images/arrow-right.png);
+  background-image: url(../assets/images/arrow-right.png);
   z-index: 1;
 }
 
 .swiper-prev {
   box-sizing: border-box;
-  background-image: url(/assets/images/arrow-left.png);
+  background-image: url(../assets/images/arrow-left.png);
   position: absolute;
   width: 102px;
   height: 102px;
-  left: 494px;
+  left: 539px;
   top: 343px;
   border-radius: 100%;
   z-index: 1;
