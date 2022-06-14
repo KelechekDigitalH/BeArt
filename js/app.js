@@ -136,7 +136,7 @@ animateMarquee(marquee, 18000);
 
 const swiper = new Swiper(".mySwiper", {
   slidesPerView: 4,
-  spaceBetween: 15,
+  spaceBetween: 100,
   centeredSlides: true,
   grabCursor: true,
   loop: true,
@@ -148,6 +148,23 @@ const swiper = new Swiper(".mySwiper", {
     nextEl: ".swiper-next",
     prevEl: ".swiper-prev",
   },
+
+  // breakpoints: {
+  //   768: {
+  //     slidesPerView: 3,
+  //     spaceBetween: 70,
+  //   },
+    
+  //   478: {
+  //     slidesPerView: 2,
+  //     spaceBetween: 70,
+  //   },
+
+  //   360: {
+  //     slidesPerView: 1,
+  //     spaceBetween: 70,
+  //   }
+  // }
    
 });
 
