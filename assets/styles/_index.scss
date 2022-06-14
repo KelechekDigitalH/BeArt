@@ -845,6 +845,8 @@
 .image-artists {
   margin: 67px 0 0 0;
   width: 31.25%;
+  perspective: 700px;
+  transform-style: preserve-3d;
 }
 
 .community__img {
@@ -853,10 +855,19 @@
   background-position: center;
   width: 100%;
   height: 600px;
+
+  transition: all .3s;
+
+  &:hover {
+    box-shadow: 0 0 20px 15px rgba(0, 0, 0, 0.144);
+    transition: all .3s;
+  }
 }
 
 .image-gallery {
   width: 31.25%;
+  perspective: 700px;
+  transform-style: preserve-3d;
 }
 
 .gallery-img {
@@ -865,6 +876,13 @@
   background-position: center;
   width: 100%;
   height: 600px;
+
+  transition: all .3s;
+
+  &:hover {
+    box-shadow: 0 0 20px 15px rgba(0, 0, 0, 0.144);
+    transition: all .3s;
+  }
 }
 
 @media (max-width: 768px) {
