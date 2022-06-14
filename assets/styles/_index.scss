@@ -516,7 +516,6 @@
 
   .fifth-item {
     max-width: 182px;
-    font-stretch: 0%;
   }
 }
 
@@ -2102,13 +2101,12 @@
 .swiper {
   margin: 0 auto;
   width: 100%;
-  height: 904px;
-  padding-bottom: 344px;
+  height: 991px;
+  padding-bottom: 351px;
 }
 
 .swiper-wrapper {
   align-items: center;
-
 }
 
 .swiper-slide {
@@ -2121,7 +2119,7 @@
 }
 
 .swiper-slide-active {
-  transform: scale(1.2);
+  transform: scale(1.4);
   transition: .4s;
   margin: 0 130px 0 40px !important;
   position: relative;
@@ -2133,16 +2131,18 @@
   position: absolute;
   top: 524px;
   left:0px;
-  width: 600px;
+  width: 500px;
 }
 
 .info-content h5 {
   @include inner-description;
+  font-size: 19px;
+  margin: 0 0 30px 0;
 }
 
 .info-content p {
   @include benefits;
-  font-size: 16px;
+  font-size: 13px;
 }
 
 .swiper-slide-active .info-content {
@@ -2158,6 +2158,7 @@
 .info-title {
   @include inner-title;
   font-size: 18px;
+  text-transform: none;
 }
 
 
@@ -2175,11 +2176,12 @@
   position: absolute;
   width: 102px;
   height: 102px;
-  left: 539px;
+  left: 515px;
   top: 210px;
   border-radius: 100%;
   background-image: url(../assets/images/arrow-right.png);
   z-index: 1;
+  cursor: pointer;
 }
 
 .swiper-prev {
@@ -2188,10 +2190,11 @@
   position: absolute;
   width: 102px;
   height: 102px;
-  left: 539px;
+  left: 515px;
   top: 343px;
   border-radius: 100%;
   z-index: 1;
+  cursor: pointer;
 }
 
 .info-name {
