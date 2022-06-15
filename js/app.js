@@ -37,8 +37,10 @@ const ourCommitment = new Vivus(
   {
     type: 'sync',
     duration: 150,
+    start: 'inViewport',
   },
 );
+ourCommitment.reset().play();
 
 const ourCommunity = new Vivus(
   'line-community',
@@ -174,6 +176,44 @@ const swiper = new Swiper(".mySwiper", {
       spaceBetween: 100
     },
 
-    
+  
   }
 });
+
+
+// Card animation
+const cardArtist = document.querySelector('.image-artists');
+cardArtist.addEventListener('mousemove', startRotateArtist);
+cardArtist.addEventListener('mouseout', stopRotateArtist);
+
+function startRotateArtist(e) {
+  const cardImgArtist = this.querySelector('.community__img');
+  const halfHeightArtist = cardImgArtist.offsetHeight / 2;
+  const halfWidthArtist = cardImgArtist.offsetWidth / 2;
+
+  cardImgArtist.style.transform = 'rotateX('+-(e.offsetY - halfHeightArtist)/20+'deg) rotateY('+ (e.offsetX - halfWidthArtist)/20 +'deg)';
+}
+
+function stopRotateArtist() {
+  const cardImgArtist = this.querySelector('.community__img');
+  cardImgArtist.style.transform = 'rotate(0)';
+}
+
+
+const cardGallery = document.querySelector('.image-gallery');
+cardGallery.addEventListener('mousemove', startRotateGallery);
+cardGallery.addEventListener('mouseout', stopRotateGallery);
+
+function startRotateGallery(e) {
+  const cardImgGallery = this.querySelector('.gallery-img');
+  const halfHeightGallery = cardImgGallery.offsetHeight / 2;
+  const halfWidthGallery = cardImgGallery.offsetWidth / 2;
+
+  cardImgGallery.style.transform = 'rotateX('+-(e.offsetY - halfHeightGallery)/20+'deg) rotateY('+ (e.offsetX - halfWidthGallery)/20 +'deg)';
+}
+
+function stopRotateGallery() {
+  const cardImgGallery = this.querySelector('.gallery-img');
+  cardImgGallery.style.transform = 'rotate(0)';
+}
+
