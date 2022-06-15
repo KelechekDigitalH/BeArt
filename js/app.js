@@ -103,70 +103,77 @@ AOS.init({
 
 
 /***Marquee animation ***/
-function animateMarquee(el, duration) {
-  const strokeEl = el.querySelector('.stroke-text');
-  const innerWidth = strokeEl.offsetWidth;
-  const cloneEl = strokeEl.cloneNode(true);
-  el.appendChild(cloneEl);
+// function animateMarquee(el, duration) {
+//   const strokeEl = el.querySelector('.stroke-text');
+//   const innerWidth = strokeEl.offsetWidth;
+//   const cloneEl = strokeEl.cloneNode(true);
+//   el.appendChild(cloneEl);
 
-  let start = performance.now();
-  let progress;
-  let translateX;
+//   let start = performance.now();
+//   let progress;
+//   let translateX;
 
-  requestAnimationFrame(function step(now) {
-    progress = (now - start) / duration;
+//   requestAnimationFrame(function step(now) {
+//     progress = (now - start) / duration;
  
-    if (progress > 1) {
-    	progress %= 1;
-      start = now;
-    }
+//     if (progress > 1) {
+//     	progress %= 1;
+//       start = now;
+//     }
 
-    translateX = innerWidth * progress;
+//     translateX = innerWidth * progress;
     
-    strokeEl.style.transform = `translate3d(-${translateX}px, 0 , 0)`;
-    cloneEl.style.transform = `translate3d(-${translateX}px, 0 , 0)`;
-    requestAnimationFrame(step);
-  });
-}
-const marquee = document.querySelector('#marquee-text');
-animateMarquee(marquee, 18000);
+//     strokeEl.style.transform = `translate3d(-${translateX}px, 0 , 0)`;
+//     cloneEl.style.transform = `translate3d(-${translateX}px, 0 , 0)`;
+//     requestAnimationFrame(step);
+//   });
+// }
+// const marquee = document.querySelector('#marquee-text');
+// animateMarquee(marquee, 18000);
 
 
 // Carousel-swiper
 
 const swiper = new Swiper(".mySwiper", {
-  slidesPerView: 4,
+  slidesPerView: '4',
   spaceBetween: 100,
   centeredSlides: true,
-  grabCursor: true,
+  grabcursor: true,
   loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
   navigation: {
-    nextEl: ".swiper-next",
-    prevEl: ".swiper-prev",
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
+  breakpoints: {
+    360: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    478: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    672: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+    700: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 70
+    },
+    885: {
+      slidesPerView: 4,
+      spaceBetween: 100
+    },
+    991: {
+      slidesPerView: 4,
+      spaceBetween: 100
+    },
 
-  // breakpoints: {
-  //   768: {
-  //     slidesPerView: 3,
-  //     spaceBetween: 70,
-  //   },
     
-  //   478: {
-  //     slidesPerView: 2,
-  //     spaceBetween: 70,
-  //   },
-
-  //   360: {
-  //     slidesPerView: 1,
-  //     spaceBetween: 70,
-  //   }
-  // }
-   
+  }
 });
-
-
-
