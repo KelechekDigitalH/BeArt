@@ -920,7 +920,7 @@
 .image-artists {
   margin: 67px 0 0 0;
   width: 31.25%;
-  perspective: 700px;
+  perspective: 1000px;
   transform-style: preserve-3d;
 }
 
@@ -934,14 +934,13 @@
   transition: all .3s;
 
   &:hover {
-    box-shadow: 0 0 20px 15px rgba(0, 0, 0, 0.144);
     transition: all .3s;
   }
 }
 
 .image-gallery {
   width: 31.25%;
-  perspective: 700px;
+  perspective: 1000px;
   transform-style: preserve-3d;
 }
 
@@ -955,7 +954,6 @@
   transition: all .3s;
 
   &:hover {
-    box-shadow: 0 0 20px 15px rgba(0, 0, 0, 0.144);
     transition: all .3s;
   }
 }
@@ -2335,6 +2333,11 @@
       content: url('../assets/images/arrow-right768.png');
       }
     
+
+      .swiper-backface-hidden .swiper-slide {
+        transform: translateZ(1) !important;
+        backface-visibility: none;
+      } 
   }
   
   
