@@ -246,6 +246,10 @@
 }
 
 @media screen and (max-width: 478.98px) {
+  .footer {
+    overflow: hidden;
+  }
+
   .footer__inner__title {
     max-width: 668px;
     font-size: 30px;
