@@ -217,3 +217,35 @@ function stopRotateGallery() {
   cardImgGallery.style.transform = 'rotate(0)';
 }
 
+
+// Topscreen Video
+
+const videoPlayBtn = document.querySelector('.video-btn');
+const topscreenWrapper = document.querySelector('.video-topscreen');
+const strokeTextBlocks = document.querySelectorAll('.stroke-text-block');
+const video = document.querySelector('.video-player');
+const strokeTextLeft = document.querySelector('#stroke-left');
+const strokeTextRight = document.querySelector('#stroke-right');
+
+videoPlayBtn.addEventListener('click', togglePlay);
+
+function togglePlay() {
+
+  strokeTextBlocks.forEach(el => {
+    el.classList.toggle('active');
+  });
+
+  strokeTextLeft.classList.add('animate');
+  strokeTextRight.classList.add('animate');
+
+
+  if (video.paused || video.ended) {
+    video.play();
+    video.classList.add('hidden');
+  
+  } else {
+    video.pause();
+    video.classList.remove('hidden');
+  }
+
+}
