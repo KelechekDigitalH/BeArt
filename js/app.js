@@ -263,3 +263,9 @@ function closeVideoScreen() {
 
   video.pause();
 }
+
+function play() {
+  video.currentTime = 0;
+  video.classList.remove('active');
+  setTimeout(function() {video.play();}, 600);
+}
