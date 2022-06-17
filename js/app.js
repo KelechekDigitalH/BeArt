@@ -221,31 +221,45 @@ function stopRotateGallery() {
 // Topscreen Video
 
 const videoPlayBtn = document.querySelector('.video-btn');
+const videoBtnBlock = document.querySelector('.video-btn-block');
 const topscreenWrapper = document.querySelector('.video-topscreen');
 const strokeTextBlocks = document.querySelectorAll('.stroke-text-block');
 const video = document.querySelector('.video-player');
+const closeBtn = document.querySelector('.close-btn');
 const strokeTextLeft = document.querySelector('#stroke-left');
 const strokeTextRight = document.querySelector('#stroke-right');
 
 videoPlayBtn.addEventListener('click', togglePlay);
+closeBtn.addEventListener('click', closeVideoScreen);
 
 function togglePlay() {
 
   strokeTextBlocks.forEach(el => {
-    el.classList.toggle('active');
+    el.classList.add('active');
   });
 
+  closeBtn.classList.add('active');
   strokeTextLeft.classList.add('animate');
   strokeTextRight.classList.add('animate');
-
+  videoBtnBlock.classList.add('hidden');
 
   if (video.paused || video.ended) {
     video.play();
-    video.classList.add('hidden');
+    video.classList.add('active');
   
   } else {
     video.pause();
-    video.classList.remove('hidden');
+    video.classList.remove('active');
   }
+}
 
+function closeVideoScreen() {
+  video.classList.remove('active');
+  strokeTextBlocks.forEach(el => {
+    el.classList.remove('active');
+  });
+  videoBtnBlock.classList.remove('hidden');
+  closeBtn.classList.remove('active');
+
+  video.pause();
 }
