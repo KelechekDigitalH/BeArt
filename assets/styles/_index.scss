@@ -68,10 +68,12 @@
     position: absolute;
     transform: translate(0, -80px);
     left: 71%;
+    z-index: 99;
   }
 
   .video-btn-block.hidden {
     opacity: 0;
+    z-index: -99;
   }
 
   .round-ticker {
@@ -92,6 +94,7 @@
       transform: translate(53px, 51px);
       top: 0;
       width: 57.11px;
+      cursor: pointer;
     }
   }
 
@@ -204,7 +207,7 @@
 }
 
 .close-btn span {
-  content: url('/assets/images/close-video.svg');
+  content: url('../assets/images/close-video.svg');
   margin-left: 5px;
 }
 
@@ -2324,7 +2327,7 @@
     }
   
     .swiper-slide-active {
-      transform: scale(1.2);
+      transform: scale(1.2) !important;
       transition: 0.4s;
       margin: 0 125px 0 40px!important;
     }
@@ -2352,13 +2355,13 @@
     .swiper-button-next {
       position: absolute;
       top: 334px;
-      transform: translate(-423px, 0px);
+      transform: translate(-450px, 0px);
     }
     
     .swiper-button-prev {
       position: absolute;
       top: 250px;
-      transform: translate(297px, 0px);
+      transform: translate(270px, 0px);
     }
   
     .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
@@ -2368,12 +2371,6 @@
     .swiper-button-prev:after, .swiper-container-rtl .swiper-button-prev:after {
       content: url('../assets/images/arrow-right768.png');
       }
-    
-
-      .swiper-backface-hidden .swiper-slide {
-        transform: translateZ(1) !important;
-        backface-visibility: none;
-      } 
   }
   
   
