@@ -73,6 +73,7 @@
 
   .video-btn-block.hidden {
     opacity: 0;
+    z-index: -99;
   }
 
   .round-ticker {
@@ -93,6 +94,7 @@
       transform: translate(53px, 51px);
       top: 0;
       width: 57.11px;
+      cursor: pointer;
     }
   }
 
