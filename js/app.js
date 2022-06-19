@@ -244,9 +244,9 @@ function togglePlay() {
   videoBtnBlock.classList.add('hidden');
 
   if (video.paused || video.ended) {
-    video.play();
+    setTimeout(function() {video.play();}, 1000);
     video.classList.add('active');
-  
+    video.volume=0.5;
   } else {
     video.pause();
     video.classList.remove('active');
@@ -264,8 +264,3 @@ function closeVideoScreen() {
   video.pause();
 }
 
-function play() {
-  video.currentTime = 0;
-  video.classList.remove('active');
-  setTimeout(function() {video.play();}, 600);
-}
