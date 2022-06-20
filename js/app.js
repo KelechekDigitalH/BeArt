@@ -219,12 +219,15 @@ function stopRotateGallery() {
 
 
 // Topscreen Video
-
+const topscreen = document.querySelector('.topscreen');
+const topscreenWrapper = document.querySelector('.topscreen__wrapper');
+console.log(topscreenWrapper);
+const topscreenTitle = document.querySelector('.topscreen__title');
 const videoPlayBtn = document.querySelector('.video-btn');
 const videoBtnBlock = document.querySelector('.video-btn-block');
-const topscreenWrapper = document.querySelector('.video-topscreen');
+// const topscreenWrapper = document.querySelector('.video-topscreen');
 const strokeTextBlocks = document.querySelectorAll('.stroke-text-block');
-const video = document.querySelector('.video-player');
+const video = document.querySelector('.video');
 const closeBtn = document.querySelector('.close-btn');
 const strokeTextLeft = document.querySelector('#stroke-left');
 const strokeTextRight = document.querySelector('#stroke-right');
@@ -238,15 +241,18 @@ function togglePlay() {
     el.classList.add('active');
   });
 
+  topscreen.classList.add('active');
+  topscreenTitle.classList.add('unvisible');
+  topscreenWrapper.classList.add('active');
   closeBtn.classList.add('active');
   strokeTextLeft.classList.add('animate');
   strokeTextRight.classList.add('animate');
   videoBtnBlock.classList.add('hidden');
 
   if (video.paused || video.ended) {
-    setTimeout(function() {video.play();}, 1000);
+    setTimeout(function() {video.play()}, 1500);
     video.classList.add('active');
-    video.volume=0.5;
+    video.volume=0.3;
   } else {
     video.pause();
     video.classList.remove('active');
@@ -260,7 +266,8 @@ function closeVideoScreen() {
   });
   videoBtnBlock.classList.remove('hidden');
   closeBtn.classList.remove('active');
-
+  topscreen.classList.remove('active');
+  topscreenTitle.classList.remove('unvisible');
+  topscreenWrapper.classList.remove('active');
   video.pause();
 }
-
