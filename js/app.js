@@ -151,17 +151,21 @@ const swiper = new Swiper(".mySwiper", {
       slidesPerView: 1,
       spaceBetween: 20
     },
-    478: {
-      slidesPerView: 2,
+    425: {
+      slidesPerView: 1,
       spaceBetween: 20
     },
+    478: {
+      slidesPerView: 2,
+      spaceBetween: 70
+    },
     672: {
-      slidesPerView: 3,
-      spaceBetween: 30
+      slidesPerView: 2,
+      spaceBetween: 70
     },
     700: {
       slidesPerView: 3,
-      spaceBetween: 30
+      spaceBetween: 70
     },
     768: {
       slidesPerView: 3,
