@@ -73,29 +73,32 @@
                 </h1>
                 <div class="video-btn-block">
                     <div class="round-ticker"></div>
-                    <!-- <a class="video-btn" href="#"> -->
-                        <img class="video-btn video-btn__img" src="./assets/images/topscreen-play-icon.svg" alt="video-btn">
-                    <!-- </a> -->
+                    <img class="video-btn video-btn__img" src="./assets/images/topscreen-play-icon.svg" alt="video-btn">
                 </div>
                 <div class="video-topscreen">
                     <div class="video-topscreen__inner">
-                        <div class="stroke-text-block left-block">
-                            <p id="stroke-left" class="stroke-text left-stroke-text">NFTs is future </p>  
-                        </div>           
-                        <video class="video-player" src="./assets/video/BeART_Video.mp4" muted controls loop preload="auto">
-                            <div class="stroke-text-block left-block">
+                        <div class="video__item stroke-text-block">
+                            <div class="left-block">
                                 <p id="stroke-left" class="stroke-text left-stroke-text">NFTs is future </p>  
-                            </div>    
-                            <source src="./assets/video/BeART_Video.webm" type='video/webm; codecs="vp8.0, vorbis"'>
-                            <source src="./assets/video/BeART_Video.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'>
-                            <p>Sorry, but your browser does not support this video format.</p>
-                        </video>
-                        <button class="close-btn"><span></span>close</button>
-                        <div class="stroke-text-block right-block">
-                            <p id="stroke-right" class="stroke-text right-stroke-text">NFTs is future <p>      
+                            </div>
                         </div>
-                    </div>  
-                </div>   
+                        <div class="video__item video-block">
+                            <div class="video-player">
+                                <video class="video" src="./assets/video/BeART_Video.mp4" controls loop preload="auto">
+                                    <source src="./assets/video/BeART_Video.webm" type='video/webm; codecs="vp8.0, vorbis"'>
+                                    <source src="./assets/video/BeART_Video.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'>
+                                    <p>Sorry, but your browser does not support this video format.</p>
+                                </video>
+                                <button class="close-btn"><span></span>close</button> 
+                            </div>
+                        </div>
+                        <div class="video__item stroke-text-block">
+                            <div class="right-block">
+                                <p id="stroke-right" class="stroke-text right-stroke-text">NFTs is future<p>       
+                            </div>   
+                        </div>
+                    </div> 
+                </div>      
             </div>
         </div>   
     </section>
