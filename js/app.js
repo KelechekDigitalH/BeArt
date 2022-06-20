@@ -157,11 +157,11 @@ const swiper = new Swiper(".mySwiper", {
     },
     478: {
       slidesPerView: 2,
-      spaceBetween: 70
+      spaceBetween: 120
     },
     672: {
       slidesPerView: 2,
-      spaceBetween: 70
+      spaceBetween: 100
     },
     700: {
       slidesPerView: 3,

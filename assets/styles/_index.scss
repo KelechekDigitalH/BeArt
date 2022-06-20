@@ -2494,7 +2494,7 @@
     .swiper-slide-active {
       transform: scale(1.2);
       transition: 0.4s;
-      margin: 0 104px 0 36px!important;
+      margin: 0 104px 0 -5px!important;
     }
   
   
@@ -2529,13 +2529,13 @@
     .swiper-button-next {
       position: absolute;
       top: 338px;
-      transform: translate(-307px, 0px);
+      transform: translate(-319px, 0px);
     }
     
     .swiper-button-prev {
       position: absolute;
       top: 271px;
-      transform: translate(124px, 0px);
+      transform: translate(109px, 0px);
     }
   
     .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
@@ -2651,6 +2651,8 @@
     }
   
   }
+
+
 
 
 // Media Our Team
