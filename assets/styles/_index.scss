@@ -118,6 +118,7 @@
       position: absolute;
       transform: translate(0, -49px);
       left: 74%;
+      z-index: 1;
     }
 
     .round-ticker {
@@ -2879,7 +2880,7 @@
   }
 
   .our-team__inner__description-block {
-    padding: 0 0 0 118px;
+    padding: 0 0 0 0;
     margin: 0 0 50px 0;
   }
 
