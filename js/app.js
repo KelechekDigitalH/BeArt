@@ -11,10 +11,11 @@ document.querySelector('.burger').addEventListener('click', function () {
 let lastScroll = 0;
 const defaultOffset = 200;
 const header = document.querySelector('.header');
+const nav = document.querySelector('.nav');
 
 const scrollPosition = () => window.pageYOffset || document.documentElement.scrollTop;
 const containHide = () => header.classList.contains('hide');
-const mediaQuery = window.matchMedia('(min-width: 768px)');
+// const mediaQuery = window.matchMedia('(min-width: 768px)');
 
 window.addEventListener('scroll', () => {
   if(scrollPosition() > lastScroll && !containHide() && scrollPosition() > defaultOffset) {
@@ -23,7 +24,7 @@ window.addEventListener('scroll', () => {
   else if(scrollPosition() < lastScroll && containHide()){
     header.classList.remove('hide');
   }
-
+  
 
   lastScroll = scrollPosition();
 })
