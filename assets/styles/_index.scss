@@ -1318,6 +1318,19 @@
 
 }
 
+@media (max-width: 425px) {
+  .image-artists {
+    margin: 29px 0 0 auto;
+    width: 84%;
+  }
+
+  .image-gallery {
+    margin: 27px 0 0 auto;
+    width: 84%;
+  }
+
+}
+
 @media (max-width: 360px) {
   .community {
     &__wrapper-artist {
