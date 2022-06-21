@@ -415,6 +415,30 @@
   }
 }
 
+@media (max-width: 425px) {
+  .video-player .video {
+    margin-top: 55px;
+  }
+
+  .block-close {
+    position: absolute;
+    right: 15px;
+    top: 67px;
+  }
+}
+
+@media (max-width: 375px) {
+  .video-player .video {
+    margin-top: 70px;
+  }
+
+  .block-close {
+    position: absolute;
+    right: 15px;
+    top: 13px;
+  }
+}
+
 @media (max-width: 360px) {
   .video-player {
     position: relative;
@@ -2683,26 +2707,48 @@
   }
 
   .swiper-slide-active {
-    transform: scale(1.2);
+    transform: scale(1.0)!important;
     transition: 0.4s;
-    margin: 0 60px 0 75px !important;
+    margin: 0 60px 0 56px !important;
   }
 
   .swiper-button-next {
     position: absolute;
     top: 322px;
-    transform: translate(-422px, 0px);
+    transform: translate(-404px, 0px);
   }
 
   .swiper-button-prev {
     position: absolute;
     top: 250px;
-    transform: translate(8px, 0px);
+    transform: translate(26px, 0px);
   }
 
 }
 
+@media (max-width:320px) {
+  .swiper {
+    height: 660px;
+    padding-bottom: 250px;
+  }
 
+  .swiper-slide-active {
+    margin: 0 60px 0 34px !important;
+  }
+  
+  .swiper-button-next {
+    position: absolute;
+    top: 322px;
+    transform: translate(-419px, 0px);
+  }
+
+  .swiper-button-prev {
+    position: absolute;
+    top: 250px;
+    transform: translate(11px, 0px);
+  }
+
+}
 
 // Media Our Team
 @media screen and (max-width: 768.98px) {
