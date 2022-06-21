@@ -11,23 +11,24 @@ document.querySelector('.burger').addEventListener('click', function () {
 let lastScroll = 0;
 const defaultOffset = 200;
 const header = document.querySelector('.header');
-const navList = document.querySelector('.nav__list');
 
 const scrollPosition = () => window.pageYOffset || document.documentElement.scrollTop;
 const containHide = () => header.classList.contains('hide');
+const mediaQuery = window.matchMedia('(min-width: 768px)');
 
 window.addEventListener('scroll', () => {
   if(scrollPosition() > lastScroll && !containHide() && scrollPosition() > defaultOffset) {
     header.classList.add('hide');
-    navList.classList.add('hide');
   }
   else if(scrollPosition() < lastScroll && containHide()){
     header.classList.remove('hide');
-    navList.classList.remove('hide');
   }
+
 
   lastScroll = scrollPosition();
 })
+
+
 
 
 
@@ -147,6 +148,10 @@ const swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
   breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
     360: {
       slidesPerView: 1,
       spaceBetween: 20
@@ -225,11 +230,9 @@ function stopRotateGallery() {
 // Topscreen Video
 const topscreen = document.querySelector('.topscreen');
 const topscreenWrapper = document.querySelector('.topscreen__wrapper');
-console.log(topscreenWrapper);
 const topscreenTitle = document.querySelector('.topscreen__title');
 const videoPlayBtn = document.querySelector('.video-btn');
 const videoBtnBlock = document.querySelector('.video-btn-block');
-// const topscreenWrapper = document.querySelector('.video-topscreen');
 const strokeTextBlocks = document.querySelectorAll('.stroke-text-block');
 const video = document.querySelector('.video');
 const closeBtn = document.querySelector('.close-btn');

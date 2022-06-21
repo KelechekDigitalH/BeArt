@@ -25,7 +25,7 @@
 }
 
 .header.hide {
-  transform: translateY(-106px);
+  transform: translateY(-600px);
 }
 
 
@@ -161,9 +161,7 @@
    z-index: 5;
  }
 
- .nav__list.hide {
-  transform: translateY(-120%);
-}
+
 
   .nav__link {
     font-size: 20px;
