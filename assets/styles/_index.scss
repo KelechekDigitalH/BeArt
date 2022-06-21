@@ -2880,7 +2880,7 @@
   }
 
   .our-team__inner__description-block {
-    padding: 0 0 0 0;
+    padding: 0 0 0 105px;
     margin: 0 0 50px 0;
   }
 
@@ -2912,6 +2912,12 @@
     width: 50px;
     height: 50px;
     background-position: center;
+  }
+}
+
+@media screen and (max-width: 360.98px) {
+  .our-team__inner__description-block {
+    padding: 0 0 0 35px;
   }
 }
 
