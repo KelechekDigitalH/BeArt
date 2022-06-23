@@ -1,6 +1,8 @@
 // Fonts
-$ff-archivo: 'Archivo', sans-serif;
-$ff-cormorant: 'Cormorant', serif;
+$ff-archivo: 'Archivo',
+sans-serif;
+$ff-cormorant: 'Cormorant',
+serif;
 
 // Font weights
 $fw-400: 400;
@@ -24,66 +26,66 @@ $color-grey-hover: #6A6A6A;
 
 // Mixins
 @mixin title {
-  font-family: $ff-cormorant;
-  font-style: $fs-normal;
-  font-weight: $fw-500;
-  font-size: 45px;
+    font-family: $ff-cormorant;
+    font-style: $fs-normal;
+    font-weight: $fw-500;
+    font-size: 45px;
 
-  line-height: 140%;
-  text-transform: uppercase;
-  color: $color-dark;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: $color-dark;
 }
 
 @mixin inner-title {
-  font-family: $ff-archivo;
-  font-style: $fs-normal;
-  font-weight: $fw-500;
-  font-size: 45px;
-  line-height: 140%;
-  text-transform: uppercase;
-  color: $color-dark-2d;
-  font-stretch: 120%;
+    font-family: $ff-archivo;
+    font-style: $fs-normal;
+    font-weight: $fw-500;
+    font-size: 45px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: $color-dark-2d;
+    font-stretch: 120%;
 }
 
 @mixin inner-description {
-  font-family: $ff-archivo;
-  font-style: $fs-normal;
-  font-weight: $fw-400;
-  font-size: 24px;
-  line-height: 140%;
-  text-transform: uppercase;
-  color: $color-dark;
-  font-stretch: 120%;
+    font-family: $ff-archivo;
+    font-style: $fs-normal;
+    font-weight: $fw-400;
+    font-size: 24px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: $color-dark;
+    font-stretch: 120%;
 }
 
 @mixin benefits {
-  font-family: $ff-archivo;
-  font-style: $fs-normal;
-  font-weight: $fw-400;
-  font-size: 18px;
+    font-family: $ff-archivo;
+    font-style: $fs-normal;
+    font-weight: $fw-400;
+    font-size: 18px;
 
-  line-height: 140%;
-  color: $color-light-dark;
-  font-stretch: 120%;
+    line-height: 140%;
+    color: $color-light-dark;
+    font-stretch: 120%;
 }
 
 @mixin rectangle {
-  width: 14px;
-  height: 14px;
-  background-color: $color-white;
-  transform: rotate(45deg);
-  margin: 0 23px 0 3px;
+    width: 14px;
+    height: 14px;
+    background-color: $color-white;
+    transform: rotate(45deg);
+    margin: 0 23px 0 3px;
 }
 
 @mixin benefits-span {
-  color: $color-dark;
+    color: $color-dark;
 }
 
 @mixin partners-description {
-  font-family: $ff-archivo;
-  font-style: $fs-normal;
-  font-weight: $fw-400;
-  font-size: 16px;
-  line-height: 24px;
-  color: $color-light-dark;
+    font-family: $ff-archivo;
+    font-style: $fs-normal;
+    font-weight: $fw-400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-light-dark;
 }
