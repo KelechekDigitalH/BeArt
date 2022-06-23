@@ -2,337 +2,337 @@
 
 // Footer
 .footer {
-  background-color: $color-dark;
-  padding: 120px 0 40px 0;
+    background-color: $color-dark;
+    padding: 120px 0 40px 0;
 }
 
 .footer__inner__rectangle-title {
-  display: flex;
-  align-items: center;
-  margin: 0 0 90px 0;
+    display: flex;
+    align-items: center;
+    margin: 0 0 90px 0;
 }
 
 .footer__inner__rectangle {
-  @include rectangle;
+    @include rectangle;
 }
 
 .footer__inner__title {
-  @include title;
-  font-weight: $fw-400;
-  color: $color-white;
+    @include title;
+    font-weight: $fw-400;
+    color: $color-white;
 }
 
 .footer__inner__email-address {
-  display: flex;
-  align-items: start;
-  justify-content: space-between;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
 
-  max-width: 1040px;
-  margin: 0 40px 0 auto;
+    max-width: 1040px;
+    margin: 0 40px 0 auto;
 }
 
 .footer__inner__email-block {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 
-  width: 630px;
+    width: 630px;
 
-  position: relative;
+    position: relative;
 }
 
 .footer__inner__email-block__input {
-  width: 100%;
+    width: 100%;
 
-  border: none;
-  border-bottom: 1px solid $color-white;
-  background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $color-white;
+    background-color: transparent;
 
-  font-family: $ff-archivo;
-  font-weight: $fw-400;
-  font-style: $fs-normal;
-  font-size: 18px;
+    font-family: $ff-archivo;
+    font-weight: $fw-400;
+    font-style: $fs-normal;
+    font-size: 18px;
 
-  padding: 12px 0 15px 0;
+    padding: 12px 0 15px 0;
 
-  color: $color-white;
-  outline: none;
+    color: $color-white;
+    outline: none;
 
-  &::placeholder {
-    color: $color-light-dark;
-  }
+    &::placeholder {
+        color: $color-light-dark;
+    }
 }
 
 .footer__inner__email-block__button {
-  background-color: $color-yellow;
-  border: none;
-  cursor: pointer;
+    background-color: $color-yellow;
+    border: none;
+    cursor: pointer;
 
-  width: 38px;
-  height: 38px;
+    width: 38px;
+    height: 38px;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-  position: absolute;
-  right: 0;
-  top: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 .footer__inner__address-block {
-  display: block;
+    display: block;
 }
 
 .footer__inner__address-block-adaptive {
-  display: none;
+    display: none;
 }
 
 .footer__inner__address-block__text {
-  @include inner-description;
-  color: $color-white;
-  max-width: 300px
+    @include inner-description;
+    color: $color-white;
+    max-width: 300px
 }
 
 .footer__inner__address-block__tel {
-  @include inner-description;
+    @include inner-description;
 
-  text-decoration: none;
-  color: $color-white;
+    text-decoration: none;
+    color: $color-white;
 }
 
 .important-footer {
-  display: inline-block;
-  position: relative;
+    display: inline-block;
+    position: relative;
 }
 
 .footer__inner__line-footer {
-  position: absolute;
-  top: -9px;
-  left: -14px;
-  width: 299px;
+    position: absolute;
+    top: -9px;
+    left: -14px;
+    width: 299px;
 }
 
 // Footer Navigation
 .footer__nav {
-  border-top: 1px solid $color-white;
-  border-bottom: 1px solid $color-white;
+    border-top: 1px solid $color-white;
+    border-bottom: 1px solid $color-white;
 
-  width: 100%;
+    width: 100%;
 
-  margin: 100px 0 0 0;
+    margin: 100px 0 0 0;
 }
 
 .footer__nav__inner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-  padding: 37px 0;
+    padding: 37px 0;
 }
 
 .footer__nav__items {
-  list-style: none;
-  display: flex;
-  align-items: center;
+    list-style: none;
+    display: flex;
+    align-items: center;
 }
 
 .footer__nav__item+.footer__nav__item {
-  margin: 0 0 0 80px;
+    margin: 0 0 0 80px;
 }
 
 .footer__nav__item__link {
-  font-family: $ff-archivo;
-  font-weight: $fw-400;
-  font-style: $fs-normal;
-  font-size: 25px;
+    font-family: $ff-archivo;
+    font-weight: $fw-400;
+    font-style: $fs-normal;
+    font-size: 25px;
 
-  text-decoration: none;
-  text-transform: uppercase;
-  color: $color-white;
-  font-stretch: 120%;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color-white;
+    font-stretch: 120%;
 }
 
 .footer__social-all-items {
-  margin: 80px 0 50px 0;
+    margin: 80px 0 50px 0;
 }
 
 .footer__social {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer__social__item+.footer__social__item {
-  margin-left: 30px;
+    margin-left: 30px;
 }
 
 .footer__social__link {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 // Copyright
 .footer__copyright {
-  text-align: center;
+    text-align: center;
 }
 
 .footer__copyright__text {
-  font-family: $ff-archivo;
-  font-weight: $fw-400;
-  font-style: $fs-normal;
-  font-size: 16px;
+    font-family: $ff-archivo;
+    font-weight: $fw-400;
+    font-style: $fs-normal;
+    font-size: 16px;
 
-  color: $color-light-dark;
+    color: $color-light-dark;
 }
 
 
 // Media footer
 @media screen and (max-width: 768.98px) {
-  .footer__inner__title {
-    max-width: 668px;
-    line-height: 120%;
-  }
+    .footer__inner__title {
+        max-width: 668px;
+        line-height: 120%;
+    }
 
-  .footer {
-    padding: 71px 0 40px 0;
-  }
+    .footer {
+        padding: 71px 0 40px 0;
+    }
 
-  .footer__inner__rectangle-title {
-    margin: 0 0 69px 0;
-  }
+    .footer__inner__rectangle-title {
+        margin: 0 0 69px 0;
+    }
 
-  .footer__inner__email-address {
-    display: block;
+    .footer__inner__email-address {
+        display: block;
 
-    max-width: 480px;
-  }
+        max-width: 480px;
+    }
 
-  .footer__inner__email-block {
-    max-width: 520px;
-  }
+    .footer__inner__email-block {
+        max-width: 520px;
+    }
 
-  .footer__inner__address-block__text {
-    max-width: 520px;
-    margin: 70px 0 0 0;
-    font-size: 20px;
-  }
+    .footer__inner__address-block__text {
+        max-width: 520px;
+        margin: 70px 0 0 0;
+        font-size: 20px;
+    }
 
-  .footer__inner__address-block__tel {
-    font-size: 20px;
-  }
+    .footer__inner__address-block__tel {
+        font-size: 20px;
+    }
 
-  .footer__nav__inner {
-    justify-content: center;
-  }
+    .footer__nav__inner {
+        justify-content: center;
+    }
 
-  .footer__nav {
-    margin: 43px 0 41px 0;
-  }
+    .footer__nav {
+        margin: 43px 0 41px 0;
+    }
 
-  .footer__nav__item__link {
-    @include inner-description;
-    font-size: 18px;
-    color: $color-white;
-  }
+    .footer__nav__item__link {
+        @include inner-description;
+        font-size: 18px;
+        color: $color-white;
+    }
 
-  .footer__nav__item+.footer__nav__item {
-    margin: 0 0 0 30px;
-  }
+    .footer__nav__item+.footer__nav__item {
+        margin: 0 0 0 30px;
+    }
 
-  .footer__inner__line-footer {
-    top: -14px;
-    left: -14px;
-  }
+    .footer__inner__line-footer {
+        top: -14px;
+        left: -14px;
+    }
 }
 
 @media screen and (max-width: 478.98px) {
-  .footer {
-    overflow: hidden;
-  }
+    .footer {
+        overflow: hidden;
+    }
 
-  .footer__inner__title {
-    max-width: 668px;
-    font-size: 30px;
-  }
+    .footer__inner__title {
+        max-width: 668px;
+        font-size: 30px;
+    }
 
-  .footer__nav {
-    margin: 50px 0;
-  }
+    .footer__nav {
+        margin: 50px 0;
+    }
 
-  .footer__inner__line-footer {
-    width: 197px;
-  }
+    .footer__inner__line-footer {
+        width: 197px;
+    }
 
-  .footer__inner__email-address {
-    display: flex;
-    margin: 0;
-    max-width: 520px;
-  }
+    .footer__inner__email-address {
+        display: flex;
+        margin: 0;
+        max-width: 520px;
+    }
 
-  .footer__inner__email-block {
-    max-width: 520px;
-  }
+    .footer__inner__email-block {
+        max-width: 520px;
+    }
 
-  .footer__inner__address-block {
-    display: none;
-  }
+    .footer__inner__address-block {
+        display: none;
+    }
 
-  .footer__inner__address-block-adaptive {
-    text-align: center;
-    display: block;
-  }
+    .footer__inner__address-block-adaptive {
+        text-align: center;
+        display: block;
+    }
 
-  .footer__inner__address-block__text {
-    max-width: 520px;
-    margin: 46px 0 0 0;
-    font-size: 18px;
-  }
+    .footer__inner__address-block__text {
+        max-width: 520px;
+        margin: 46px 0 0 0;
+        font-size: 18px;
+    }
 
-  .footer__inner__address-block__tel {
-    font-size: 18px;
-  }
+    .footer__inner__address-block__tel {
+        font-size: 18px;
+    }
 
-  .footer__social-all-items {
-    margin: 30px 0;
-  }
+    .footer__social-all-items {
+        margin: 30px 0;
+    }
 
-  .footer__nav__items {
-    display: block;
-    text-align: center;
-  }
+    .footer__nav__items {
+        display: block;
+        text-align: center;
+    }
 
-  .footer__social {
-    padding: 0;
-    justify-content: center;
-  }
+    .footer__social {
+        padding: 0;
+        justify-content: center;
+    }
 
-  .footer__nav__inner {
-    justify-content: center;
-    padding: 30px 0;
-  }
+    .footer__nav__inner {
+        justify-content: center;
+        padding: 30px 0;
+    }
 
-  .footer__nav__item__link {
-    @include inner-description;
-    font-size: 18px;
-    color: $color-white;
-  }
+    .footer__nav__item__link {
+        @include inner-description;
+        font-size: 18px;
+        color: $color-white;
+    }
 
-  .footer__nav__item+.footer__nav__item {
-    margin: 20px 0 0 0;
-  }
+    .footer__nav__item+.footer__nav__item {
+        margin: 20px 0 0 0;
+    }
 
-  .footer-adaptive {
-    display: block;
-    margin: 50px 0 35px 0;
-  }
+    .footer-adaptive {
+        display: block;
+        margin: 50px 0 35px 0;
+    }
 
-  .footer__copyright__text {
-    margin: 0;
-  }
+    .footer__copyright__text {
+        margin: 0;
+    }
 
-  .footer__inner__line-footer {
-    top: -8px;
-    left: -5px;
-    width: 197px;
-  }
+    .footer__inner__line-footer {
+        top: -8px;
+        left: -5px;
+        width: 197px;
+    }
 }
