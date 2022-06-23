@@ -103,7 +103,7 @@
 
         &__title {
             font-size: 50px;
-            padding: 10px 0 0 0;
+            padding: 70px 0 110px 0;
         }
 
         &__title.unvisible {
@@ -142,6 +142,7 @@
 
 @media (max-width: 478px) {
     .topscreen {
+        padding: 90px 0 0 0;
 
         &__title {
             font-size: 30px;
