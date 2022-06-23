@@ -731,8 +731,20 @@
   overflow: hidden;
   white-space: nowrap;
   position: absolute;
-  top: 1200px;
+  bottom: -2px;
 }
+
+.marquee::before {
+  content: '';
+  background-color: $color-light-grey;
+  position: absolute;
+  left:0;
+  bottom: 0;
+  width: 100%;
+  height: 67px;
+  display: block;
+}
+
 
 .issues-block {
   max-width: 1078px;
@@ -807,6 +819,7 @@
   -webkit-text-stroke: 1px #ACACAC;
   white-space: nowrap;
   display: inline-block;
+  position: relative;
 }
 
 @media (max-width: 1110px) {
@@ -866,8 +879,13 @@
   .marquee {
     overflow: hidden;
     position: absolute;
-    top: 3033px;
+    bottom: -2px;
   }
+
+  .marquee::before {
+    height: 45px;
+  }
+  
 }
 
 @media (max-width: 478px) {
@@ -883,7 +901,7 @@
 
     &__description {
       font-size: 16px;
-      margin: 40px 0 0 0;
+      margin: 40px 0 67px 0;
       line-height: 138%;
     }
   }
@@ -942,8 +960,13 @@
 
   .marquee {
     position: absolute;
-    top: 2754px;
+    bottom: -2px;
   }
+
+  .marquee::before {
+    height: 34px;
+  }
+
 }
 
 @media (max-width: 477px) {
@@ -1043,7 +1066,11 @@
   .marquee {
     overflow: hidden;
     position: absolute;
-    top: 2524px;
+    bottom: -2px;
+  }
+
+  .marquee::before {
+    height: 34px;
   }
 
 }
