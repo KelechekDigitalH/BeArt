@@ -1,0 +1,91 @@
+// Fonts
+$ff-archivo: 'Archivo',
+sans-serif;
+$ff-cormorant: 'Cormorant',
+serif;
+
+// Font weights
+$fw-400: 400;
+$fw-500: 500;
+$fw-700: 700;
+
+// Font styles
+$fs-normal: normal;
+
+// Colors
+$color-light-grey: #EBEBEB;
+$color-grey: #BCBCBC;
+$color-light-dark-9a: #9A9A9A;
+$color-light-dark: #747474;
+$color-dark: #383838;
+$color-dark-2d: #2D2D2D;
+$color-yellow: #F3BF6A;
+$color-white: #FFFFFF;
+$color-balck: #000000;
+$color-grey-hover: #6A6A6A;
+
+// Mixins
+@mixin title {
+    font-family: $ff-cormorant;
+    font-style: $fs-normal;
+    font-weight: $fw-500;
+    font-size: 45px;
+
+    line-height: 140%;
+    text-transform: uppercase;
+    color: $color-dark;
+}
+
+@mixin inner-title {
+    font-family: $ff-archivo;
+    font-style: $fs-normal;
+    font-weight: $fw-500;
+    font-size: 45px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: $color-dark-2d;
+    font-stretch: 120%;
+}
+
+@mixin inner-description {
+    font-family: $ff-archivo;
+    font-style: $fs-normal;
+    font-weight: $fw-400;
+    font-size: 24px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: $color-dark;
+    font-stretch: 120%;
+}
+
+@mixin benefits {
+    font-family: $ff-archivo;
+    font-style: $fs-normal;
+    font-weight: $fw-400;
+    font-size: 18px;
+
+    line-height: 140%;
+    color: $color-light-dark;
+    font-stretch: 120%;
+}
+
+@mixin rectangle {
+    width: 14px;
+    height: 14px;
+    background-color: $color-white;
+    transform: rotate(45deg);
+    margin: 0 23px 0 3px;
+}
+
+@mixin benefits-span {
+    color: $color-dark;
+}
+
+@mixin partners-description {
+    font-family: $ff-archivo;
+    font-style: $fs-normal;
+    font-weight: $fw-400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-light-dark;
+}

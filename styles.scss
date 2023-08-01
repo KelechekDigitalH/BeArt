@@ -1,0 +1,43 @@
+// Imports
+@import './assets/styles/vars';
+@import './assets/styles/index';
+@import './assets/styles/header';
+@import './assets/styles/footer';
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100,400;120,400;120,500;120,700&family=Cormorant:wght@500;700&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  background: $color-light-grey;
+}
+
+body.menu-opened {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1310px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 30px;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 478px) {
+  .container {
+    padding: 0 15px;
+  }
+}
